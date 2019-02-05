@@ -1,0 +1,7 @@
+numpy
+tensorflow
+keras<=2.1.6
+matplotlib
+h5py
+recordclass
+pyyaml
