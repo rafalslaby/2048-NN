@@ -43,6 +43,13 @@ Each agent is evaluated by playing 25000 steps of the game
 
 Best agent goes up to 1330 sum of tiles and max 1024 tile with average sum on board ~530
 
+Max tile of random agent is 256 with average sum on board equal 250
+
+## Limitations
+
+All agents very quickly learn that it's best to assign general priority to each move sometimes irrespective 
+to the board state.
+
 ## Directory names meaning
 
 ill0_em015_Adamax_mae_256_256_256_linear_batch_8_tUpdF100_learnF30_div_by_max_ddq_1_trm_epsC10000_RMDC1000000_dry1
