@@ -5,3 +5,4 @@ simple_q_learning_double_merges_forbidden/
 results/
 *.log
 venv/
+.vscode/
