@@ -52,7 +52,7 @@ em015 - minimum eps = 0.15
 Adamax - neural network optimizer  
 256_256_256 - sizes of each fully connected deep layer  
 linear - output activation function  
-batch_8 - number of memory samples in each training 
+batch_8 - number of memory samples in each training  
 tUpdF100 - update target network (double q learning) each 100 trainings  
 learnF30 - train each 30 steps in game  
 div_by_max - state mapping function, this one divides all tiles by current max  
