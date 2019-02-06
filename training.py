@@ -49,9 +49,6 @@ def configuration_gen(root_dir):
                 datetime.datetime.now().strftime(datetime_stamp_format))
         conf_dir.mkdir(parents=True, exist_ok=True)
 
-        if (conf_dir / 'done.txt').exists():
-            continue
-
         model_file = conf_dir / 'model.h5'
         model = make_model(c.layers_size, c.optimizer, c.output_activation, loss=c.loss)
 
@@ -85,12 +82,12 @@ def extract_state_map_func(path: str):
 
 
 def examine_model(conf_dir, games, out_file=sys.stdout, verbose=False, model=None,
-                  extra_prefs_file=open(os.devnull, 'w'), render=False, render_fps=2):
+                  extra_prefs_file=open(os.devnull, 'w'), render=False, render_fps=10, game_over_sleep=1000):
     state_map_func = extract_state_map_func(str(conf_dir))
     # allow_illegal = re.search(r'ill_([^\\]+)', str(conf_dir)).group(1) == 'True'
     directions = ['left', 'up', 'right', 'down']
     model = model or load_model(str(conf_dir / 'model.h5'))
-    env = env_2048.Env2048(gui_visualization=render, render_fps=render_fps)
+    env = env_2048.Env2048(gui_visualization=render, render_fps=render_fps, game_over_sleep=game_over_sleep)
     for game in range(games):
         moves = [0] * 4
         illegal_tries = 0
@@ -131,7 +128,7 @@ def examine_model(conf_dir, games, out_file=sys.stdout, verbose=False, model=Non
 
 
 def train_configuration(steps, c, model, target_model, model_file, target_model_file, conf_dir, evaluate=False,
-                        extra_prefs_file=open(os.devnull, 'w'), render=False, render_fps=10):
+                        extra_prefs_file=open(os.devnull, 'w'), render=False, render_fps=10, game_over_sleep=1000):
     name_prefix = 'evaluate_' if evaluate else 'train_'
     with open(conf_dir / f'{name_prefix}scores.csv', 'w', newline='') as scores_file, \
             open(conf_dir / f'{name_prefix}progress.csv', 'w', newline='') as progress_file, \
@@ -147,7 +144,7 @@ def train_configuration(steps, c, model, target_model, model_file, target_model_
         (conf_dir / 'diag').mkdir(parents=True, exist_ok=True)
 
         results = []
-        env = env_2048.Env2048(gui_visualization=render, render_fps=render_fps)
+        env = env_2048.Env2048(gui_visualization=render, render_fps=render_fps, game_over_sleep=game_over_sleep)
         games_counter = 0
         scores_writer = csv.writer(scores_file)
         scores_writer.writerow(score_csv_header)
@@ -204,7 +201,7 @@ def train_configuration(steps, c, model, target_model, model_file, target_model_
         print(training_result_row(last_step_end, games_counter, agent.epsilon, results))
 
 
-def start_training(out_dir='results', render=False, render_fps=1):
+def start_training(out_dir='results', render=False, render_fps=1, game_over_sleep=1000):
     configuration_counter = count()
     for c, model, target_model, model_file, target_model_file, conf_dir in configuration_gen(out_dir):
         print(next(configuration_counter), ':', str(conf_dir))
@@ -213,10 +210,10 @@ def start_training(out_dir='results', render=False, render_fps=1):
             continue
         with open(conf_dir / 'extra_pref.txt', 'w') as extra_prefs_file:
             train_configuration(STEPS, c, model, target_model, model_file, target_model_file, conf_dir, False,
-                                extra_prefs_file, render=render, render_fps=render_fps)
+                                extra_prefs_file, render=render, render_fps=render_fps, game_over_sleep=game_over_sleep)
 
         train_configuration(EVALUATION_STEPS, c, model, target_model, model_file, target_model_file, conf_dir,
-                            evaluate=True, render=render, render_fps=render_fps)
+                            evaluate=True, render=render, render_fps=render_fps, game_over_sleep=game_over_sleep)
 
 
 def profile_training(out_dir='results'):

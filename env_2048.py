@@ -14,18 +14,21 @@ Score = namedtuple('Score', 'max_tile sum')
 
 
 class Env2048:
-    GAME_OVER_SLEEP = 3
     RENDER_QUEUE_SIZE = 100
+    game_thread = None
 
-    def __init__(self, board: Optional[Board] = None, gui_visualization=False, render_fps=None):
+    def __init__(self, board: Optional[Board] = None, gui_visualization=False, render_fps=1, game_over_sleep=1000):
         self._board = board or Board()
         self._bases = np.ones((4, 4), 'int32')
         self._do_visualize = gui_visualization
         self.render_fps = render_fps
-        if gui_visualization:
-            self.state_render_queue = queue.Queue(maxsize=Env2048.RENDER_QUEUE_SIZE)
-            self.game_thread = threading.Thread(target=GUI2048, args=(self.state_render_queue, 1000 // render_fps))
-            self.game_thread.start()
+        self.game_over_sleep = game_over_sleep
+        # lazy 'static' initialization
+        # tkinter won't let you create separate windows ;/
+        if gui_visualization and Env2048.game_thread is None:
+            Env2048.state_render_queue = queue.Queue(maxsize=Env2048.RENDER_QUEUE_SIZE)
+            Env2048.game_thread = threading.Thread(target=GUI2048, args=(Env2048.state_render_queue,))
+            Env2048.game_thread.start()
             self._render()
 
     def reset(self):
@@ -42,7 +45,7 @@ class Env2048:
                 self._render()
         is_game_over = self._is_game_over()
         if render and is_game_over:
-            self._render(Env2048.GAME_OVER_SLEEP * 1000)
+            self._render(self.game_over_sleep)
         step_result = StepResult(self.state(), board_move_result, is_game_over)
         return step_result
 
@@ -68,4 +71,5 @@ class Env2048:
         return self._board.is_board_full() and not self._board.can_move()
 
     def _render(self, wait_ms=None):
-        self.state_render_queue.put((self.power_2_state(), wait_ms))
+        wait_ms = wait_ms or 1000 // self.render_fps
+        Env2048.state_render_queue.put((self.power_2_state(), wait_ms))

@@ -33,14 +33,13 @@ class GUI2048(Frame):
     KEY_LEFT = "'a'"
     KEY_RIGHT = "'d'"
 
-    def __init__(self, state_queue, update_fps=100):
+    def __init__(self, state_queue):
         """
         Freezes the thread in mainloop. Periodically each update_fps checks for new
         (state, wait_after_ms) tuples in state_queue and updates gui board with state
         """
         Frame.__init__(self)
         self.state_queue = state_queue
-        self.update_fps = update_fps
 
         self.grid()
         self.master.title('2048')
@@ -80,7 +79,7 @@ class GUI2048(Frame):
         self.update_idletasks()
 
     def update_state(self):
-        wait_after_ms = None
+        wait_after_ms = 1
         try:
             state, wait_after_ms = self.state_queue.get_nowait()
             self.matrix = state
@@ -89,4 +88,4 @@ class GUI2048(Frame):
         except queue.Empty:
             pass
         finally:
-            self.after(wait_after_ms or self.update_fps, self.update_state)
+            self.after(wait_after_ms, self.update_state)

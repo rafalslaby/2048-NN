@@ -53,7 +53,6 @@ TOTAL_RANDOM = TrainingConf(False, 1, 'adam', 'mae', [8] * 10, 'linear', 64, 100
                             do_nothing, False, power_reward, 100000000, False, False, False, False)
 
 USE_SPECIFIC_CONF = False
-STEPS = 1000
 SPECIFIC_CONFIGURATIONS = [TOTAL_RANDOM]
 
 STATE_MAP_FUNCTIONS_DICT = {'div_by_max': div_by_max, 'do_nothing': do_nothing, 'normalized_16': norm_16,
