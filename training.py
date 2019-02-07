@@ -29,6 +29,8 @@ TrainingConf = recordclass('TrainingConf',
                            'update_targets_each learn_each memory_size state_map_function double_q reward_func '
                            'epsilon_constant equal_dones equal_directions crucial dry')
 
+# TODO: try convolutions, try really big network, try different deep activation
+
 
 def remove_contradictions_from_config(config: TrainingConf):
     if config.dry:

@@ -29,6 +29,7 @@ def parse_stats_strings(stats_row):
     return StatsRow(date, *numbers)
 
 
+# TODO: add atribute getter for sorting
 def get_sorted_summary(start_dir, glob_filename):
     stats = []
     for file in pathlib.Path(start_dir).glob(f"**/{glob_filename}"):
@@ -38,7 +39,6 @@ def get_sorted_summary(start_dir, glob_filename):
 
 
 get_sorted_summary(pathlib.Path('results'), 'evaluate_done.csv')
-
 
 
 def remove_all_empty_directories(path):
@@ -51,5 +51,3 @@ def remove_all_empty_directories(path):
             remove_all_empty_directories(file)
     if len(os.listdir(path)) == 0:
         os.rmdir(path)
-
-
