@@ -65,21 +65,21 @@ def make_decreasing_epsilon(constant, min_eps):
 
 
 def count_reward(result: StepResult):
-    return len(result.board_move_result)
+    return len(result.board_move_result.merged_values)
 
 
 count_reward.short_name = 'cr'
 
 
 def normalized_count_reward(result: StepResult):
-    return len(result.board_move_result) / 8
+    return len(result.board_move_result.merged_values) / 8
 
 
 normalized_count_reward.short_name = 'ncr'
 
 
 def dynamic_normalized_count_reward(result: StepResult):
-    return len(result.board_move_result - 1) / 8
+    return (len(result.board_move_result.merged_values) - 1) / 8
 
 
 dynamic_normalized_count_reward.short_name = 'ncr'
@@ -88,7 +88,7 @@ dynamic_normalized_count_reward.short_name = 'ncr'
 def punishing_normalized_count_reward(result: StepResult):
     if result.is_game_over:
         return -1
-    return (len(result.board_move_result) - 1) / 8
+    return len(result.board_move_result.merged_values) / 8
 
 
 punishing_normalized_count_reward.short_name = 'pncr'
@@ -97,7 +97,7 @@ punishing_normalized_count_reward.short_name = 'pncr'
 def dynamic_punishing_normalized_count_reward(result: StepResult):
     if result.is_game_over:
         return -1
-    return (len(result.board_move_result)) / 8
+    return (len(result.board_move_result.merged_values) - 1) / 8
 
 
 count_reward.short_name = 'dpncr'
