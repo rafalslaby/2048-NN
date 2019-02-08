@@ -39,18 +39,21 @@ EPSILON_CONSTATNS = [3_000, 5_000, 10_000, 30_000]
 EVALUATION_STEPS = 25_000
 UPDATE_TARGETS_EACH_TRAIN_OPTS = [4, 10, 100]
 
+CONVOLUTIONAL_LAYERS = [[(128, 3), (128, 2)], [(256, 3), (256, 2)], [(64, 3), (64, 2)], [(128, 3), (256, 2)], []]
+CONV_ACTIVATIONS = [None, 'relu']
+
 TrainingConf = recordclass('TrainingConf',
-                           'allow_illegal min_eps optimizer loss layers_size output_activation batch_size '
+                           'allow_illegal min_eps optimizer loss conv_activation conv_layers layers_size output_activation batch_size '
                            'update_targets_each learn_each memory_size state_map_function double_q reward_func '
                            'epsilon_constant equal_dones equal_directions crucial dry')
 
-ALL_OPTIONS = [ALLOW_ILLEGAL_OPTS, MIN_EPS_OPTS, OPTIMIZERS, LOSSES, LAYERS_SIZES, OUTPUT_ACTIVATIONS,
-               BATCH_SIZES, UPDATE_TARGETS_EACH_TRAIN_OPTS, LEARN_EACH_OPTS, MEMORY_SIZES, STATE_MAP_FUNCTIONS,
-               DOUBLE_Q_LEARNING_OPTS, REWARD_FUNCS, EPSILON_CONSTATNS, EQUAL_DONES_OPTS, EQUAL_DIRECTIONS_OPTS,
-               CRUCIAL_OPTS, DRY_OPTS]
+ALL_OPTIONS = [ALLOW_ILLEGAL_OPTS, MIN_EPS_OPTS, OPTIMIZERS, LOSSES, CONV_ACTIVATIONS, CONVOLUTIONAL_LAYERS,
+               DEEP_LAYERS_SIZES, OUTPUT_ACTIVATIONS, BATCH_SIZES, UPDATE_TARGETS_EACH_TRAIN_OPTS, LEARN_EACH_OPTS,
+               MEMORY_SIZES, STATE_MAP_FUNCTIONS, DOUBLE_Q_LEARNING_OPTS, REWARD_FUNCS, EPSILON_CONSTATNS,
+               EQUAL_DONES_OPTS, EQUAL_DIRECTIONS_OPTS, CRUCIAL_OPTS, DRY_OPTS]
 
-TOTAL_RANDOM = TrainingConf(False, 1, 'adam', 'mae', [8] * 10, 'linear', 64, 1000000000000, 100000000000, 10000,
-                            do_nothing, False, power_reward, 100000000, False, False, False, False)
+TOTAL_RANDOM = TrainingConf(False, 1, 'adam', 'mae', None, [], [8] * 10, 'linear', 64, 1000000000000, 100000000000,
+                            10000, do_nothing, False, power_reward, 100000000, False, False, False, False)
 
 USE_SPECIFIC_CONF = False
 SPECIFIC_CONFIGURATIONS = [TOTAL_RANDOM]

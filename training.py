@@ -25,7 +25,7 @@ GameResult = namedtuple('GameResult', 'steps max_tile sum total_reward')
 datetime_format = '%Y-%m-%d_%H:%M:%S.%f'
 
 TrainingConf = recordclass('TrainingConf',
-                           'allow_illegal min_eps optimizer loss layers_size output_activation batch_size '
+                           'allow_illegal min_eps optimizer loss conv_activation conv_layers layers_size output_activation batch_size '
                            'update_targets_each learn_each memory_size state_map_function double_q reward_func '
                            'epsilon_constant equal_dones equal_directions crucial dry')
 
@@ -53,11 +53,13 @@ def configuration_gen(root_dir):
         conf_dir.mkdir(parents=True, exist_ok=True)
 
         model_file = conf_dir / 'model.h5'
-        model = make_model(c.layers_size, c.optimizer, c.output_activation, loss=c.loss)
+        model = make_model(c.layers_size, c.optimizer, c.output_activation, loss=c.loss, conv_layers=c.conv_layers,
+                           conv_activation=c.conv_activation)
 
         if c.double_q:
             target_model_file = conf_dir / 'target_model.h5'
-            target_model = make_model(c.layers_size, c.optimizer, c.output_activation, loss=c.loss)
+            target_model = make_model(c.layers_size, c.optimizer, c.output_activation, loss=c.loss,
+                                      conv_layers=c.conv_layers, conv_activation=c.conv_activation)
         else:
             target_model = model
             target_model_file = model_file
@@ -100,7 +102,7 @@ def examine_model(conf_dir, games, out_file=sys.stdout, verbose=False, model=Non
         while not done:
             from_state = env.state()
             q_table = model.predict(
-                np.expand_dims(np.array(state_map_func(from_state), dtype=np.float64), 0), batch_size=1)[0]
+                np.array(state_map_func(from_state), dtype=np.float64).reshape((1,4,4,1)), batch_size=1)[0]
             choices = env.act_space()
 
             move = choose_best_valid(q_table, choices)

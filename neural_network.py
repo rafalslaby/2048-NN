@@ -1,13 +1,16 @@
 from typing import List
 import os
 import numpy as np
-from keras.layers import Dense, Flatten, InputLayer
+from keras.layers import Dense, Flatten, InputLayer, Conv2D
 from keras.models import Sequential
 
 
-def make_model(deep_layer_sizes: List[int], optimizer='Adam', output_activation='softmax', loss='mse'):
+def make_model(deep_layer_sizes: List[int], optimizer='Adam', output_activation='softmax', loss='mse',
+               conv_layers=[], conv_activation=None):
     model = Sequential()
-    model.add(InputLayer(input_shape=(4, 4)))
+    model.add(InputLayer(input_shape=(4, 4, 1)))
+    for filters, kernel_size in conv_layers:
+        model.add(Conv2D(filters, kernel_size, activation=conv_activation, ))
     model.add(Flatten())
     for size in deep_layer_sizes:
         model.add(Dense(size, activation='relu'))
@@ -16,6 +19,10 @@ def make_model(deep_layer_sizes: List[int], optimizer='Adam', output_activation=
                   optimizer=optimizer,
                   metrics=['mse'])
     return model
+
+
+def format_for_input(arr):
+    return np.array(arr).reshape(-1, 4, 4, 1)
 
 
 def prepare_training_batch(experiences, model, target_model, gamma):
@@ -31,8 +38,8 @@ def prepare_training_batch(experiences, model, target_model, gamma):
         rewards.append(exp.reward)
         dones.append(exp.done)
 
-    next_q_tables = target_model.predict(np.array(to_states), batch_size=len(experiences))
-    target_q_tables = model.predict(np.array(from_states), batch_size=len(experiences))
+    next_q_tables = target_model.predict(format_for_input(to_states), batch_size=len(experiences))
+    target_q_tables = model.predict(format_for_input(from_states), batch_size=len(experiences))
     rewards = np.array(rewards)
     actions = np.array(actions)
     dones = np.array(dones)
@@ -40,7 +47,7 @@ def prepare_training_batch(experiences, model, target_model, gamma):
     target_q_tables[np.arange(len(experiences)), actions] = rewards + (1 - dones) * gamma * np.max(next_q_tables,
                                                                                                    axis=1)
 
-    return np.array(from_states), np.array(target_q_tables)
+    return format_for_input(from_states), np.array(target_q_tables)
 
 
 def prepare_training_batch_iter(experiences, model, target_model, gamma):
