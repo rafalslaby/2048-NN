@@ -65,8 +65,44 @@ ALL_OPTIONS = [ALLOW_ILLEGAL_OPTS, MIN_EPS_OPTS, OPTIMIZERS, LOSSES, CONV_ACTIVA
 TOTAL_RANDOM = TrainingConf(False, 1, 'adam', 'mae', None, [], [8] * 10, 'linear', 64, 1000000000000, 100000000000,
                             10000, do_nothing, False, power_reward, 100000000, False, False, False, False)
 
+BIG_NET_NORMALIZED_DPNCR = TrainingConf(True, 0.1, 'adam', 'mae', None, [], [500, 300, 200, 200, 100], 'linear', 64,
+                                        100,
+                                        100, 100_000, norm_16, False, dynamic_punishing_normalized_count_reward, 50_000,
+                                        False, False, False, False)
+
+BIG_NET_NORMALIZED_NCR = TrainingConf(False, 0.1, 'adam', 'mae', None, [], [500, 300, 200, 200, 100], 'linear', 64, 100,
+                                      100, 100_000, norm_16, False, normalized_count_reward, 50_000,
+                                      False, False, False, False)
+
+BIG_NET_NORMALIZED_NCR_SMART_MEM = TrainingConf(False, 0.1, 'adam', 'mae', None, [], [500, 300, 200, 200, 100],
+                                                'linear', 64, 100,
+                                                100, 100_000, norm_16, False, normalized_count_reward, 50_000,
+                                                True, True, True, False)
+
+BIG_NET_NORMALIZED_DPNCR_DRY = TrainingConf(False, 0.1, 'adam', 'mae', None, [], [500, 300, 200, 200, 100], 'linear',
+                                            64, 100,
+                                            100, 100_000, norm_16, False, dynamic_punishing_normalized_count_reward,
+                                            50_000,
+                                            False, False, False, True)
+
+CONV_DPNCR = TrainingConf(True, 0.1, 'adam', 'mae', 'linear', [(128, 3), (128, 2)], [256], 'linear', 64, 100,
+                          100, 100_000, norm_16, False, dynamic_punishing_normalized_count_reward, 50_000,
+                          False, False, False, False)
+
+CONV_NCR = TrainingConf(False, 0.1, 'adam', 'mae', 'linear', [(128, 3), (128, 2)], [256], 'linear', 64, 100,
+                        100, 100_000, norm_16, False, normalized_count_reward, 50_000,
+                        False, False, False, False)
+
+CONV_DPNCR_SMART_MEM = TrainingConf(True, 0.1, 'adam', 'mae', 'linear', [(128, 3), (128, 2)], [256], 'linear', 64, 100,
+                                    100, 100_000, norm_16, False, dynamic_punishing_normalized_count_reward, 50_000,
+                                    True, True, True, False)
+
+CONV_DPNCR_DRY = TrainingConf(False, 0.1, 'adam', 'mae', 'linear', [(128, 3), (128, 2)], [256], 'linear', 64, 100,
+                              100, 100_000, norm_16, False, dynamic_punishing_normalized_count_reward, 50_000,
+                              False, False, False, True)
+
 USE_SPECIFIC_CONF = False
-SPECIFIC_CONFIGURATIONS = [TOTAL_RANDOM]
+SPECIFIC_CONFIGURATIONS = [BIG_NET_NORMALIZED_DPNCR, BIG_NET_NORMALIZED_NCR, CONV_DPNCR, CONV_NCR]
 
 STATE_MAP_FUNCTIONS_DICT = {'div_by_max': div_by_max, 'do_nothing': do_nothing, 'normalized_16': norm_16,
                             'gp2': game_power_2, 'rp2': real_power_2}
