@@ -5,12 +5,13 @@ from recordclass import recordclass
 import os
 
 DISCOUNT_FACTOR = 0.95
-SAVE_MODELS_FREQ = 5_000
+SAVE_MODELS_FREQ = 50_000
 LOG_PROGRESS_FREQ = 1_500
 CONF_TO_TEST_NUMBER = 10000
 USE_GPU = False
 
-LAYERS_SIZES = [[16, 14, 12, 10, 8, 6, 4], [16] * 10, [8] * 10, [256], [32] * 5, [64] * 3, [256] * 3, [4] * 10]
+DEEP_LAYERS_SIZES = [[16, 14, 12, 10, 8, 6, 4], [16] * 10, [8] * 10, [256], [32] * 5, [64] * 3, [256] * 3, [4] * 10]
+
 OUTPUT_ACTIVATIONS = ['linear']
 OPTIMIZERS = ['adam', 'sgd', 'RMSprop', 'Adagrad', 'Adadelta', 'Adamax', 'Nadam']
 LOSSES = ['mse', 'mae']
@@ -29,18 +30,27 @@ EQUAL_DIRECTIONS_OPTS = [True, False]
 DRY_OPTS = [True, False]
 CRUCIAL_OPTS = [True, False]
 
-# Diagnostic testing
-
-STEPS = 100_000
-ZERO_EPS_STEP = STEPS - 20_000
+STEPS = 750_000
+ZERO_EPS_STEP = STEPS - 100_000
 MEMORY_STATS_EACH_STEPS = 100
-DIAG_EVALUATE_EACH_GAMES = 5
-EPSILON_CONSTATNS = [3_000, 5_000, 10_000, 30_000]
+DIAG_EVALUATE_EACH_GAMES = 100
+EPSILON_CONSTATNS = [30_00, 50_000, 100_000]
 EVALUATION_STEPS = 25_000
 UPDATE_TARGETS_EACH_TRAIN_OPTS = [4, 10, 100]
+CONVOLUTIONAL_LAYERS = [[(128, 3), (128, 2)], [(256, 3), (256, 2)], [(64, 3), (64, 2)], [(128, 3), (256, 2)]]
+CONV_ACTIVATIONS = ['linear', 'relu']
 
-CONVOLUTIONAL_LAYERS = [[(128, 3), (128, 2)], [(256, 3), (256, 2)], [(64, 3), (64, 2)], [(128, 3), (256, 2)], []]
-CONV_ACTIVATIONS = [None, 'relu']
+MIN_EPS_OPTS = [0.1]
+
+####
+# Normalized:
+####
+
+REWARD_FUNCS = [punishing_normalized_count_reward, dynamic_normalized_count_reward, normalized_count_reward,
+                dynamic_punishing_normalized_count_reward]
+STATE_MAP_FUNCTIONS = [norm_16, div_by_max]
+# no need to have many deep layers with convolutions
+DEEP_LAYERS_SIZES = [[256], [256, 256], [64] * 3, [128], [128 * 2]]
 
 TrainingConf = recordclass('TrainingConf',
                            'allow_illegal min_eps optimizer loss conv_activation conv_layers layers_size output_activation batch_size '
