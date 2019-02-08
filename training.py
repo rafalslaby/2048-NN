@@ -102,7 +102,7 @@ def examine_model(conf_dir, games, out_file=sys.stdout, verbose=False, model=Non
         while not done:
             from_state = env.state()
             q_table = model.predict(
-                np.array(state_map_func(from_state), dtype=np.float64).reshape((1,4,4,1)), batch_size=1)[0]
+                np.array(state_map_func(from_state), dtype=np.float64).reshape((1, 4, 4, 1)), batch_size=1)[0]
             choices = env.act_space()
 
             move = choose_best_valid(q_table, choices)
@@ -139,7 +139,10 @@ def train_configuration(steps, c, model, target_model, model_file, target_model_
             open(conf_dir / f'{name_prefix}progress.csv', 'w', newline='') as progress_file, \
             open(conf_dir / 'memory_stats.txt', 'a') as mem_stats_file:
         epsilon_func = (lambda x: 0) if evaluate else make_decreasing_epsilon(c.epsilon_constant, c.min_eps)
-        memory_keeper = SmartReplayMemory(c.memory_size, c.equal_dones, c.crucial)
+        if c.equal_directions or c.equal_dones or c.crucial:
+            memory_keeper = SmartReplayMemory(c.memory_size, c.equal_directions, c.equal_dones, c.crucial)
+        else:
+            memory_keeper = ReplayMemory(c.memory_size)
 
         agent = DQNAgent(0, model, target_model, epsilon_func, memory_keeper, c.batch_size, c.learn_each,
                          DISCOUNT_FACTOR, c.update_targets_each, choose_best_valid, conf_dir / 'diag')
@@ -248,5 +251,5 @@ def start_training_multiprocess(out_dir='results', render=False, render_fps=1, g
         wait(futures, return_when=ALL_COMPLETED)
 
 
-# if __name__ == '__main__':
-#     start_training_multiprocess(out_dir='testing', jobs=2)
+if __name__ == '__main__':
+    start_training()

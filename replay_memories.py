@@ -89,3 +89,33 @@ class SmartReplayMemory:
 
     def _done_experiences(self):
         return np.unique(self._np_memory[:, 4], return_counts=True)[1]
+
+
+# simple efficient memory
+class ReplayMemory:
+    def __init__(self, maxlen: int):
+        self.memory = deque(maxlen=maxlen)
+
+    def append(self, value):
+        self.memory.append(value)
+
+    def sample(self, n):
+        if len(self.memory) > n:
+            return random.sample(self.memory, n)
+        return []
+
+    def __len__(self):
+        return len(self.memory)
+
+    def __str__(self):
+        return "RM"
+
+    def memory_stats(self):
+        np_memory = np.array(self.memory)
+        directions = np_memory[:, 1]
+        dones = np_memory[:, 1]
+        return np_memory.shape[0], np.unique(dones, return_counts=True)[1], np.unique(directions, return_counts=True)[1]
+
+    def percentage_memory_stats(self):
+        stats = self.memory_stats()
+        return stats[0], stats[1] / stats[0], stats[2] / np.sum(stats[2])
