@@ -206,6 +206,9 @@ def train_configuration(steps, c, model, target_model, model_file, target_model_
 
         done_file = conf_dir / f'{name_prefix}done.csv'
         save_results(done_file, last_step_end, games_counter, agent.epsilon, results)
+        model.save(model_file)
+        if model is not target_model:
+            target_model.save(target_model_file)
         print(training_result_row(last_step_end, games_counter, agent.epsilon, results))
 
 
