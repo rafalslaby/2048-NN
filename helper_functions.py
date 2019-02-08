@@ -100,7 +100,7 @@ def dynamic_punishing_normalized_count_reward(result: StepResult):
     return (len(result.board_move_result.merged_values) - 1) / 8
 
 
-count_reward.short_name = 'dpncr'
+dynamic_punishing_normalized_count_reward.short_name = 'dpncr'
 
 
 def power_reward(result: StepResult):
