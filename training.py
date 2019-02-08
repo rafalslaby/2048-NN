@@ -29,6 +29,7 @@ TrainingConf = recordclass('TrainingConf',
                            'update_targets_each learn_each memory_size state_map_function double_q reward_func '
                            'epsilon_constant equal_dones equal_directions crucial dry')
 
+
 # TODO: try convolutions, try really big network, try different deep activation
 
 
@@ -238,5 +239,12 @@ def profile_training(out_dir='results'):
         p.print_stats(100)
 
 
-if __name__ == '__main__':
-    start_training()
+def start_training_multiprocess(out_dir='results', render=False, render_fps=1, game_over_sleep=1000, jobs=1):
+    from concurrent.futures import ProcessPoolExecutor, wait, ALL_COMPLETED
+    with ProcessPoolExecutor(max_workers=jobs) as executor:
+        futures = [executor.submit(start_training, out_dir, render, render_fps, game_over_sleep) for _ in range(jobs)]
+        wait(futures, return_when=ALL_COMPLETED)
+
+
+# if __name__ == '__main__':
+#     start_training_multiprocess(out_dir='testing', jobs=2)
