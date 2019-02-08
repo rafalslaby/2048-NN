@@ -29,11 +29,11 @@ def do_nothing(value):
     return value
 
 
-bases = np.ones(shape=(4, 4), dtype=np.int8) * 2
+bases = np.ones(shape=(4, 4)) * 2
 
 
 def real_power_2(value):
-    return np.power(bases, value, dtype='int32')
+    return np.power(bases, value)
 
 
 real_power_2.short_name = 'rp2'

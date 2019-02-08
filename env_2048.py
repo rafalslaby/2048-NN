@@ -56,7 +56,7 @@ class Env2048:
         return result
 
     def state(self):
-        return self._board.state.copy()
+        return np.array(self._board.state, dtype=np.float32)
 
     def power_2_state(self):
         return game_power_2(self.state())
