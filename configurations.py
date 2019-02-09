@@ -40,7 +40,7 @@ DIAG_EVALUATE_EACH_GAMES = 100
 EPSILON_CONSTATNS = [30_00, 50_000, 100_000]
 EVALUATION_STEPS = 25_000
 UPDATE_TARGETS_EACH_TRAIN_OPTS = [4, 10, 100]
-CONVOLUTIONAL_LAYERS = [[]]
+CONVOLUTIONAL_LAYERS = [[(128, 3), (128, 2)], [(256, 3), (256, 2)], [(64, 3), (64, 2)], [(128, 3), (256, 2)],[],[],[],[],[],[],[]]
 CONV_ACTIVATIONS = ['linear', 'relu']
 
 ####
@@ -61,7 +61,7 @@ CONVOLUTIONAL_LAYERS = [[]]
 # Convolutions
 #####
 DEEP_LAYERS_SIZES = [[256], [256, 256], [64] * 3, [128], [128 * 2]]
-CONVOLUTIONAL_LAYERS = [[(128, 3), (128, 2)], [(256, 3), (256, 2)], [(64, 3), (64, 2)], [(128, 3), (256, 2)],[],[],[],[],[],[],[]]
+CONVOLUTIONAL_LAYERS = [[(128, 3), (128, 2)], [(256, 3), (256, 2)], [(64, 3), (64, 2)], [(128, 3), (256, 2)]]
 
 #####
 # Fast testnig
