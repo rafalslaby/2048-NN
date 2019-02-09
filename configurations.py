@@ -5,6 +5,7 @@ from recordclass import recordclass
 import os
 
 DISCOUNT_FACTOR = 0.95
+LR = 0.0001
 SAVE_MODELS_FREQ = 50_000
 LOG_PROGRESS_FREQ = 1_500
 CONF_TO_TEST_NUMBER = 10000

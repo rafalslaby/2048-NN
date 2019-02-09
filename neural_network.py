@@ -3,6 +3,7 @@ import os
 import numpy as np
 from keras.layers import Dense, Flatten, InputLayer, Conv2D
 from keras.models import Sequential
+from configurations import *
 
 
 def make_model(deep_layer_sizes: List[int], optimizer='Adam', output_activation='softmax', loss='mse',
@@ -37,15 +38,15 @@ def prepare_training_batch(experiences, model, target_model, gamma):
         actions.append(exp.action)
         rewards.append(exp.reward)
         dones.append(exp.done)
-
     next_q_tables = target_model.predict(format_for_input(to_states), batch_size=len(experiences))
     target_q_tables = model.predict(format_for_input(from_states), batch_size=len(experiences))
     rewards = np.array(rewards)
     actions = np.array(actions)
     dones = np.array(dones)
 
-    target_q_tables[np.arange(len(experiences)), actions] = rewards + (1 - dones) * gamma * np.max(next_q_tables,
-                                                                                                   axis=1)
+    target_q_tables[np.arange(len(experiences)), actions] += LR * (
+            rewards + (1 - dones) * gamma * np.max(next_q_tables, axis=1) -
+            target_q_tables[np.arange(len(experiences)), actions])
 
     return format_for_input(from_states), np.array(target_q_tables)
 
