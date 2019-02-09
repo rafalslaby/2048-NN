@@ -24,7 +24,8 @@ LEARN_EACH_OPTS = [4, 10, 30, 100]
 MIN_EPS_OPTS = [0, 0.07, 0.1, 0.15]
 REWARD_FUNCS = [count_reward, power_reward, punishing_power_reward, dynamic_punishing_power_reward, value_reward,
                 time_reward_minus, time_reward_plus, dynamic_time_reward_plus, time_reward_plus_minus,
-                dynamic_time_reward_plus_minus]
+                dynamic_time_reward_plus_minus, punishing_normalized_count_reward, dynamic_normalized_count_reward, normalized_count_reward,
+                dynamic_punishing_normalized_count_reward]
 ALLOW_ILLEGAL_OPTS = [True, False]
 EQUAL_DONES_OPTS = [True, False]
 EQUAL_DIRECTIONS_OPTS = [True, False]
@@ -42,7 +43,7 @@ CONVOLUTIONAL_LAYERS = [[]]
 CONV_ACTIVATIONS = ['linear', 'relu']
 
 ####
-# Normalized:
+# Only normalized:
 ####
 
 REWARD_FUNCS = [punishing_normalized_count_reward, dynamic_normalized_count_reward, normalized_count_reward,
