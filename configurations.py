@@ -11,7 +11,8 @@ LOG_PROGRESS_FREQ = 1_500
 CONF_TO_TEST_NUMBER = 10000
 USE_GPU = False
 
-DEEP_LAYERS_SIZES = [[16, 14, 12, 10, 8, 6, 4], [16] * 10, [8] * 10, [256], [32] * 5, [64] * 3, [256] * 3, [4] * 10]
+DEEP_LAYERS_SIZES = [[16, 14, 12, 10, 8, 6, 4], [16] * 10, [8] * 10, [256], [32] * 5, [64] * 3, [256] * 3, [4] * 10, [500, 300, 200, 200, 100],
+    [4]*6,[8]*6]
 
 OUTPUT_ACTIVATIONS = ['linear']
 OPTIMIZERS = ['adam', 'sgd', 'RMSprop', 'Adagrad', 'Adadelta', 'Adamax', 'Nadam']
@@ -60,15 +61,15 @@ CONVOLUTIONAL_LAYERS = [[]]
 # Convolutions
 #####
 DEEP_LAYERS_SIZES = [[256], [256, 256], [64] * 3, [128], [128 * 2]]
-CONVOLUTIONAL_LAYERS = [[(128, 3), (128, 2)], [(256, 3), (256, 2)], [(64, 3), (64, 2)], [(128, 3), (256, 2)]]
+CONVOLUTIONAL_LAYERS = [[(128, 3), (128, 2)], [(256, 3), (256, 2)], [(64, 3), (64, 2)], [(128, 3), (256, 2)],[],[],[],[],[],[],[]]
 
 #####
 # Fast testnig
 #####
-SAVE_MODELS_FREQ = 50_000
+SAVE_MODELS_FREQ = 25_000
 LOG_PROGRESS_FREQ = 1_500
-STEPS = 150_000
-ZERO_EPS_STEP = STEPS - 25_000
+STEPS = 250_000
+ZERO_EPS_STEP = STEPS - 40_000
 MEMORY_STATS_EACH_STEPS = 1_000
 DIAG_EVALUATE_EACH_GAMES = 50
 EPSILON_CONSTATNS = [3_000, 5_000, 10_000]
