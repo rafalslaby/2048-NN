@@ -4,7 +4,7 @@ import sys
 import os
 from pathlib import Path
 from paths_helpers import *
-from neural_network import make_model
+from neural_network import make_model, format_for_input
 from helper_functions import *
 from configurations import *
 from q_agent import DQNAgent
@@ -102,7 +102,7 @@ def examine_model(conf_dir, games, out_file=sys.stdout, verbose=False, model=Non
         while not done:
             from_state = env.state()
             q_table = model.predict(
-                np.array(state_map_func(from_state), dtype=np.float64).reshape((1, 4, 4, 1)), batch_size=1)[0]
+                format_for_input([state_map_func(from_state)]), batch_size=1)[0]
             choices = env.act_space()
 
             move = choose_best_valid(q_table, choices)

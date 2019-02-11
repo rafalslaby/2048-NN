@@ -1,7 +1,7 @@
 import random
 import itertools
 
-from neural_network import prepare_training_batch
+from neural_network import prepare_training_batch, format_for_input
 from configurations import *
 
 Experience = namedtuple('Experience', 'from_state action reward to_state done')
@@ -44,7 +44,7 @@ class DQNAgent:
         return choices[0] if len(choices) == 1 else self.strategy(self.get_q_values(state), choices)
 
     def get_q_values(self, state):
-        return self.model.predict(np.array(state, dtype=np.float64).reshape((-1, 4, 4, 1)), batch_size=1)[0]
+        return self.model.predict(format_for_input([state]), batch_size=1)[0]
 
     def one_full_step(self, choices, c, env, forget, dry=False):
         mapped_from_state = c.state_map_function(env.state())

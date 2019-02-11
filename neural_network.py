@@ -9,7 +9,10 @@ from configurations import *
 def make_model(deep_layer_sizes: List[int], optimizer='Adam', output_activation='softmax', loss='mse',
                conv_layers=[], conv_activation=None):
     model = Sequential()
-    model.add(InputLayer(input_shape=(4, 4, 1)))
+    if ONE_HOT:
+        model.add(InputLayer(input_shape=(4, 4, 20)))
+    else:
+        model.add(InputLayer(input_shape=(4, 4, 1)))
     for filters, kernel_size in conv_layers:
         model.add(Conv2D(filters, kernel_size, activation=conv_activation, ))
     model.add(Flatten())
@@ -23,10 +26,18 @@ def make_model(deep_layer_sizes: List[int], optimizer='Adam', output_activation=
 
 
 def format_for_input(arr):
-    return np.array(arr).reshape(-1, 4, 4, 1)
+    if ONE_HOT:
+        # map(lambda state: np.pad(state, () ,'constant', constant_values=(0, 0)),arr)
+        one_hot_board = np.zeros((len(arr), 4, 4, 20), dtype='float')
+        for k in range(len(arr)):
+            for i in range(4):
+                for j in range(4):
+                    one_hot_board[k,i,j,arr[k][i,j]] = 1
+        return one_hot_board
+    return np.array(arr, dtype='float').reshape(-1, 4, 4, 1)
 
 
-def prepare_training_batch(experiences, model, target_model, gamma):
+def prepare_training_batch(experiences, model, target_model, discount_factor):
     to_states = []
     from_states = []
     actions = []
@@ -44,9 +55,12 @@ def prepare_training_batch(experiences, model, target_model, gamma):
     actions = np.array(actions)
     dones = np.array(dones)
 
-    target_q_tables[np.arange(len(experiences)), actions] += LR * (
-            rewards + (1 - dones) * gamma * np.max(next_q_tables, axis=1) -
-            target_q_tables[np.arange(len(experiences)), actions])
+    # target_q_tables[np.arange(len(experiences)), actions] += LR * (
+    #         rewards + (1 - dones) * discount_factor * np.max(next_q_tables, axis=1) -
+    #         target_q_tables[np.arange(len(experiences)), actions])
+
+    target_q_tables[np.arange(len(experiences)), actions] = rewards + (1 - dones) * discount_factor * np.max(
+        next_q_tables, axis=1)
 
     return format_for_input(from_states), np.array(target_q_tables)
 

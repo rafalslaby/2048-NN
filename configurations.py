@@ -43,6 +43,12 @@ UPDATE_TARGETS_EACH_TRAIN_OPTS = [4, 10, 100]
 CONVOLUTIONAL_LAYERS = [[(128, 3), (128, 2)], [(256, 3), (256, 2)], [(64, 3), (64, 2)], [(128, 3), (256, 2)],[],[],[],[],[],[],[]]
 CONV_ACTIVATIONS = ['linear', 'relu']
 
+# Has to be turned manually because it's not compatible with every state map and reward function
+ONE_HOT = True
+STATE_MAP_FUNCTIONS = [do_nothing]
+CONVOLUTIONAL_LAYERS = [[]]
+
+
 ####
 # Only normalized:
 ####
