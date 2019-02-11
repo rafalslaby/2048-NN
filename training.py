@@ -83,7 +83,7 @@ def save_results(file_path, step, game, eps, results):
 
 
 def extract_state_map_func(path: str):
-    return STATE_MAP_FUNCTIONS_DICT[next(filter(lambda f: path.find(f), STATE_MAP_FUNCTIONS_DICT.keys()), do_nothing)]
+    return STATE_MAP_FUNCTIONS_DICT[next(filter(lambda f: path.find(f) != -1, STATE_MAP_FUNCTIONS_DICT.keys()), do_nothing)]
 
 
 def examine_model(conf_dir, games, out_file=sys.stdout, verbose=False, model=None,
