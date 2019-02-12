@@ -126,12 +126,15 @@ TOTAL_RANDOM = TrainingConf(False, 1, 'adam', 'mae', None, [], [8] * 10, 'linear
 
 #ill1_em000_Adamax_mae_linear__64_64_64_64_64_64_64_linear_batch_1000_tUpdF4_learnF100_do_nothing_ddq_0_ncr_epsC3000_RMD1000000_dry0/2019_02_12_00_29/
 #ill0_em015_Adadelta_mae_linear__256_256_256_256_256_linear_batch_32_tUpdF100_learnF4_div_by_max_ddq_1_ncr_epsC50000_SRM1000000_dry1/2019_02_10_04_37
-
+#ill0_em015_Adadelta_mae_linear__256_256_256_256_256_linear_batch_32_tUpdF100_learnF4_div_by_max_ddq_1_ncr_epsC50000_RMD1000000_dry0/2019_02_12_11_56
 BEST_ONE_HOT = TrainingConf(True,0,'Adamax','mae','linear',[],[64]*7,'linear',1000,4,100,1000000,do_nothing,False, normalized_count_reward,10_000,True, False, False, False)
-BEST_BIG_NET = TrainingConf(False,0.15,'Adadelta','mae','linear',[],[256]*5,'linear',32,100,4,1000000,div_by_max,True, normalized_count_reward,50_000,True, False, False, False)
+BEST_BIG_NET = TrainingConf(False,0.15,'Adadelta','mae','linear',[],[256]*5,'linear',32,100,4,1000000,div_by_max,True, normalized_count_reward,50_000,False, False, False, True)
+BEST_BIG_NET_adam = TrainingConf(False,0.15,'adam','mae','linear',[],[256]*5,'linear',32,100,4,1000000,div_by_max,True, normalized_count_reward,50_000,False, False, False, True)
+BEST_BIG_NET_norm16 = TrainingConf(False,0.15,'Adadelta','mae','linear',[],[256]*5,'linear',32,100,4,1000000,norm_16,True, normalized_count_reward,50_000,False, False, False, True)
 
-USE_SPECIFIC_CONF = False
-SPECIFIC_CONFIGURATIONS = [BEST_ONE_HOT, BEST_BIG_NET]
+USE_SPECIFIC_CONF = True
+ONE_HOT=False
+SPECIFIC_CONFIGURATIONS = [BEST_BIG_NET_adam]
 
 STATE_MAP_FUNCTIONS_DICT = {'div_by_max': div_by_max, 'do_nothing': do_nothing, 'norm_16': norm_16,
                             'gp2': game_power_2, 'rp2': real_power_2}
