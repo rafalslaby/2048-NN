@@ -155,7 +155,7 @@ CONV_DPNCR_DRY = TrainingConf(False, 0.1, 'adam', 'mae', 'linear', [(128, 3), (1
 USE_SPECIFIC_CONF = False
 SPECIFIC_CONFIGURATIONS = [BIG_NET_NORMALIZED_DPNCR, BIG_NET_NORMALIZED_NCR, CONV_DPNCR, CONV_NCR]
 
-STATE_MAP_FUNCTIONS_DICT = {'div_by_max': div_by_max, 'do_nothing': do_nothing, 'normalized_16': norm_16,
+STATE_MAP_FUNCTIONS_DICT = {'div_by_max': div_by_max, 'do_nothing': do_nothing, 'norm_16': norm_16,
                             'gp2': game_power_2, 'rp2': real_power_2}
 
 if not USE_GPU:
