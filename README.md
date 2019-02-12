@@ -10,15 +10,21 @@ It's recommended to use conda
 ```
 conda create --name tf-cpu tensorflow python=3.6
 ```
-
-pip:
+or gpu version:
 ```
-pip3 install -r requirements.txt
+conda create --name tf-gpu tensorflow-gpu
 ```
-conda:
 ```
 conda install --file requirements.txt
+pip3 install recordclass
 ```
+You may also use pure pip:
+```
+pip3 install -r requirements.txt
+pip3 install recordclass
+```
+
+You may have to manually install python3-tk for tkinter library on linux
 
 ## Usage
 
@@ -41,13 +47,13 @@ Implementation of deep q learning agent for playing 2048 game
 
 Each agent is evaluated by playing 25000 steps of the game
 
-Best agent goes up to 1330 sum of tiles and max 1024 tile with average sum on board ~530
+Best agent goes up to 1800 sum of tiles and max 1024 tile with average sum on board ~800
 
 Max tile of random agent is 256 with average sum on board equal 250
 
 ## Limitations
 
-All agents very quickly learn that it's best to assign general priority to each move sometimes irrespective 
+Many agents very quickly learn that it's best to assign general priority to each move sometimes irrespective 
 to the board state.
 
 ## Directory names meaning
