@@ -58,9 +58,9 @@ REWARD_FUNCS = [punishing_normalized_count_reward, dynamic_normalized_count_rewa
                 dynamic_punishing_normalized_count_reward]
 STATE_MAP_FUNCTIONS = [norm_16, div_by_max]
 
-######
+# #####
 # Big net
-######
+# #####
 DEEP_LAYERS_SIZES = [[256]*5, [256]*6, [256]*7, [900,500,300,200,100],[64]*7,[8]*10]
 CONVOLUTIONAL_LAYERS = [[]]
 
@@ -69,6 +69,13 @@ CONVOLUTIONAL_LAYERS = [[]]
 #####
 DEEP_LAYERS_SIZES = [[256], [256, 256], [64] * 3, [128], [128 * 2]]
 CONVOLUTIONAL_LAYERS = [[(128, 3), (128, 2)], [(256, 3), (256, 2)], [(64, 3), (64, 2)], [(128, 3), (256, 2)]]
+
+
+### Favor best configurations
+
+LOSSES = ['mse', 'mae', 'mae', 'mae']
+REWARD_FUNCS = [punishing_normalized_count_reward, dynamic_normalized_count_reward, normalized_count_reward,
+                dynamic_punishing_normalized_count_reward,normalized_count_reward,normalized_count_reward,normalized_count_reward]
 
 #####
 # Fast testnig
@@ -101,7 +108,7 @@ LOG_PROGRESS_FREQ = 2_500
 STEPS = 5_000_000
 ZERO_EPS_STEP = STEPS - 2_000_000
 MEMORY_STATS_EACH_STEPS = 100_000
-DIAG_EVALUATE_EACH_GAMES = 10_000
+DIAG_EVALUATE_EACH_GAMES = 1_000
 EPSILON_CONSTATNS = [30_00, 50_000, 100_000]
 
 TrainingConf = recordclass('TrainingConf',
@@ -117,44 +124,14 @@ ALL_OPTIONS = [ALLOW_ILLEGAL_OPTS, MIN_EPS_OPTS, OPTIMIZERS, LOSSES, CONV_ACTIVA
 TOTAL_RANDOM = TrainingConf(False, 1, 'adam', 'mae', None, [], [8] * 10, 'linear', 64, 1000000000000, 100000000000,
                             10000, do_nothing, False, power_reward, 100000000, False, False, False, False)
 
-BIG_NET_NORMALIZED_DPNCR = TrainingConf(True, 0.1, 'adam', 'mae', None, [], [500, 300, 200, 200, 100], 'linear', 64,
-                                        100,
-                                        100, 100_000, norm_16, False, dynamic_punishing_normalized_count_reward, 50_000,
-                                        False, False, False, False)
+#ill1_em000_Adamax_mae_linear__64_64_64_64_64_64_64_linear_batch_1000_tUpdF4_learnF100_do_nothing_ddq_0_ncr_epsC3000_RMD1000000_dry0/2019_02_12_00_29/
+#ill0_em015_Adadelta_mae_linear__256_256_256_256_256_linear_batch_32_tUpdF100_learnF4_div_by_max_ddq_1_ncr_epsC50000_SRM1000000_dry1/2019_02_10_04_37
 
-BIG_NET_NORMALIZED_NCR = TrainingConf(False, 0.1, 'adam', 'mae', None, [], [500, 300, 200, 200, 100], 'linear', 64, 100,
-                                      100, 100_000, norm_16, False, normalized_count_reward, 50_000,
-                                      False, False, False, False)
-
-BIG_NET_NORMALIZED_NCR_SMART_MEM = TrainingConf(False, 0.1, 'adam', 'mae', None, [], [500, 300, 200, 200, 100],
-                                                'linear', 64, 100,
-                                                100, 100_000, norm_16, False, normalized_count_reward, 50_000,
-                                                True, True, True, False)
-
-BIG_NET_NORMALIZED_DPNCR_DRY = TrainingConf(False, 0.1, 'adam', 'mae', None, [], [500, 300, 200, 200, 100], 'linear',
-                                            64, 100,
-                                            100, 100_000, norm_16, False, dynamic_punishing_normalized_count_reward,
-                                            50_000,
-                                            False, False, False, True)
-
-CONV_DPNCR = TrainingConf(True, 0.1, 'adam', 'mae', 'linear', [(128, 3), (128, 2)], [256], 'linear', 64, 100,
-                          100, 100_000, norm_16, False, dynamic_punishing_normalized_count_reward, 50_000,
-                          False, False, False, False)
-
-CONV_NCR = TrainingConf(False, 0.1, 'adam', 'mae', 'linear', [(128, 3), (128, 2)], [256], 'linear', 64, 100,
-                        100, 100_000, norm_16, False, normalized_count_reward, 50_000,
-                        False, False, False, False)
-
-CONV_DPNCR_SMART_MEM = TrainingConf(True, 0.1, 'adam', 'mae', 'linear', [(128, 3), (128, 2)], [256], 'linear', 64, 100,
-                                    100, 100_000, norm_16, False, dynamic_punishing_normalized_count_reward, 50_000,
-                                    True, True, True, False)
-
-CONV_DPNCR_DRY = TrainingConf(False, 0.1, 'adam', 'mae', 'linear', [(128, 3), (128, 2)], [256], 'linear', 64, 100,
-                              100, 100_000, norm_16, False, dynamic_punishing_normalized_count_reward, 50_000,
-                              False, False, False, True)
+BEST_ONE_HOT = TrainingConf(True,0,'Adamax','mae','linear',[],[64]*7,'linear',1000,4,100,1000000,do_nothing,False, normalized_count_reward,10_000,True, False, False, False)
+BEST_BIG_NET = TrainingConf(False,0.15,'Adadelta','mae','linear',[],[256]*5,'linear',32,100,4,1000000,div_by_max,True, normalized_count_reward,50_000,True, False, False, False)
 
 USE_SPECIFIC_CONF = False
-SPECIFIC_CONFIGURATIONS = [BIG_NET_NORMALIZED_DPNCR, BIG_NET_NORMALIZED_NCR, CONV_DPNCR, CONV_NCR]
+SPECIFIC_CONFIGURATIONS = [BEST_ONE_HOT, BEST_BIG_NET]
 
 STATE_MAP_FUNCTIONS_DICT = {'div_by_max': div_by_max, 'do_nothing': do_nothing, 'norm_16': norm_16,
                             'gp2': game_power_2, 'rp2': real_power_2}
