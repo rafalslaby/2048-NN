@@ -4,6 +4,7 @@ from recordclass import recordclass
 
 import os
 
+ONE_HOT = False
 DISCOUNT_FACTOR = 0.95
 LR = 0.0001
 SAVE_MODELS_FREQ = 50_000
@@ -43,10 +44,10 @@ UPDATE_TARGETS_EACH_TRAIN_OPTS = [4, 10, 100]
 CONVOLUTIONAL_LAYERS = [[(128, 3), (128, 2)], [(256, 3), (256, 2)], [(64, 3), (64, 2)], [(128, 3), (256, 2)],[],[],[],[],[],[],[]]
 CONV_ACTIVATIONS = ['linear', 'relu']
 
-# Has to be turned manually because it's not compatible with every state map and reward function
+### Has to be turned manually because it's not compatible with every state map and reward function
 ONE_HOT = True
 STATE_MAP_FUNCTIONS = [do_nothing]
-CONVOLUTIONAL_LAYERS = [[]]
+REWARD_FUNCS = [normalized_count_reward]
 
 
 ####
@@ -60,7 +61,7 @@ STATE_MAP_FUNCTIONS = [norm_16, div_by_max]
 ######
 # Big net
 ######
-DEEP_LAYERS_SIZES = [[500, 300, 200, 200, 100]]
+DEEP_LAYERS_SIZES = [[256]*5, [256]*6, [256]*7, [900,500,300,200,100],[64]*7,[8]*10]
 CONVOLUTIONAL_LAYERS = [[]]
 
 #####
@@ -72,7 +73,7 @@ CONVOLUTIONAL_LAYERS = [[(128, 3), (128, 2)], [(256, 3), (256, 2)], [(64, 3), (6
 #####
 # Fast testnig
 #####
-SAVE_MODELS_FREQ = 25_000
+SAVE_MODELS_FREQ = 10_000
 LOG_PROGRESS_FREQ = 1_500
 STEPS = 300_000
 ZERO_EPS_STEP = STEPS - 80_000
@@ -97,8 +98,8 @@ EPSILON_CONSTATNS = [10_00, 25_000, 50_000]
 
 SAVE_MODELS_FREQ = 250_000
 LOG_PROGRESS_FREQ = 2_500
-STEPS = 10_000_000
-ZERO_EPS_STEP = STEPS - 500_000
+STEPS = 5_000_000
+ZERO_EPS_STEP = STEPS - 2_000_000
 MEMORY_STATS_EACH_STEPS = 100_000
 DIAG_EVALUATE_EACH_GAMES = 10_000
 EPSILON_CONSTATNS = [30_00, 50_000, 100_000]
