@@ -47,14 +47,9 @@ Implementation of deep q learning agent for playing 2048 game
 
 Each agent is evaluated by playing 25000 steps of the game
 
-Best agent goes up to 1800 sum of tiles and max 1024 tile with average sum on board ~800
+Best agent goes up to 2804 sum of tiles and max 2048 tile with average sum on board ~1100
 
 Max tile of random agent is 256 with average sum on board equal 250
-
-## Limitations
-
-Many agents very quickly learn that it's best to assign general priority to each move sometimes irrespective 
-to the board state.
 
 ## Directory names meaning
 
