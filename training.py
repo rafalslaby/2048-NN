@@ -4,7 +4,7 @@ import sys
 import os
 from pathlib import Path
 from paths_helpers import *
-from neural_network import make_model, format_for_input
+from neural_network import make_model, format_for_input, is_model_one_hot, one_hot_encode_input
 from helper_functions import *
 from configurations import *
 from q_agent import DQNAgent
@@ -91,7 +91,8 @@ def examine_model(conf_dir, games, out_file=sys.stdout, verbose=False, model=Non
     state_map_func = extract_state_map_func(str(conf_dir))
     # allow_illegal = re.search(r'ill_([^\\]+)', str(conf_dir)).group(1) == 'True'
     directions = ['left', 'up', 'right', 'down']
-    model = model or load_model(str(conf_dir / 'model.h5'))
+    model = model or load_model(str(pathlib.Path(conf_dir) / 'model.h5'))
+    input_format_func = one_hot_encode_input if is_model_one_hot(model) else format_for_input
     env = env_2048.Env2048(gui_visualization=render, render_fps=render_fps, game_over_sleep=game_over_sleep)
     for game in range(games):
         moves = [0] * 4
@@ -102,7 +103,7 @@ def examine_model(conf_dir, games, out_file=sys.stdout, verbose=False, model=Non
         while not done:
             from_state = env.state()
             q_table = model.predict(
-                format_for_input([state_map_func(from_state)]), batch_size=1)[0]
+                input_format_func([state_map_func(from_state)]), batch_size=1)[0]
             choices = env.act_space()
 
             move = choose_best_valid(q_table, choices)
@@ -203,6 +204,7 @@ def train_configuration(steps, c, model, target_model, model_file, target_model_
 
             if step % LOG_PROGRESS_FREQ == 0 and len(results) > 1:
                 progress_writer.writerow(training_result_row(step, games_counter, agent.epsilon, results))
+                progress_file.flush()
 
         done_file = conf_dir / f'{name_prefix}done.csv'
         save_results(done_file, last_step_end, games_counter, agent.epsilon, results)

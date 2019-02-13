@@ -1,7 +1,7 @@
 import random
 import itertools
 
-from neural_network import prepare_training_batch, format_for_input
+from neural_network import prepare_training_batch, format_for_input, one_hot_encode_input, is_model_one_hot
 from configurations import *
 
 Experience = namedtuple('Experience', 'from_state action reward to_state done')
@@ -37,6 +37,7 @@ class DQNAgent:
         self._dqn = target_model is not model
         self.strategy = strategy
         self.out_dir = out_dir
+        self._input_format_func = one_hot_encode_input if is_model_one_hot(self.model) else format_for_input
 
     def act(self, state, choices):
         if random.random() < self.epsilon:
@@ -44,7 +45,7 @@ class DQNAgent:
         return choices[0] if len(choices) == 1 else self.strategy(self.get_q_values(state), choices)
 
     def get_q_values(self, state):
-        return self.model.predict(format_for_input([state]), batch_size=1)[0]
+        return self.model.predict(self._input_format_func([state]), batch_size=1)[0]
 
     def one_full_step(self, choices, c, env, forget, dry=False):
         mapped_from_state = c.state_map_function(env.state())
@@ -96,7 +97,7 @@ class DQNAgent:
         if len(random_sample) < self.batch_size:
             return
         x_train, y_train = prepare_training_batch(random_sample, self.model,
-                                                  self.target_model, self.discount_factor)
+                                                  self.target_model, self.discount_factor, self._input_format_func)
         if self._dqn and self.train_number % self.update_target_each == 0:
             self.target_model.set_weights(self.model.get_weights())
 
