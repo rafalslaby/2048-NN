@@ -1,0 +1,2838 @@
+2464819 11000 0.15
+[[1 1 0 0]
+ [0 0 0 0]
+ [0 0 0 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[1.9564981 1.8527517 1.9345038 1.9329026]
+left from  ['left', 'right', 'down'] 
+
+[[2 0 0 0]
+ [0 0 0 0]
+ [0 0 1 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[1.9225792 1.9178072 1.8986149 1.9123116]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[2 0 0 1]
+ [0 0 0 0]
+ [1 0 0 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[1.9976784 1.9896866 1.9741119 1.9813684]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[2 1 0 0]
+ [0 0 0 0]
+ [1 0 1 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.0780208 2.0689826 2.062297  2.064989 ]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[2 1 0 0]
+ [0 0 0 1]
+ [2 0 0 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.097989  2.100674  2.0869727 2.0933924]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[3 1 0 1]
+ [0 0 0 0]
+ [0 0 0 1]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.1169524 2.089669  2.0985005 2.081594 ]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[3 2 0 1]
+ [0 0 0 0]
+ [1 0 0 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.0444527 2.028469  2.0198572 2.0212133]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[3 2 1 0]
+ [0 0 0 0]
+ [1 1 0 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.1327972 2.1034153 2.1107752 2.1111987]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[3 2 1 1]
+ [0 0 0 0]
+ [2 0 0 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2068424 2.1536498 2.1896195 2.1371388]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[3 2 2 0]
+ [0 0 0 0]
+ [2 0 0 0]
+ [0 0 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.2324593 2.168473  2.215571  2.0992386]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[3 3 0 0]
+ [0 0 0 0]
+ [2 0 0 1]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.1775367 2.1364715 2.1522386 2.1004698]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[4 0 0 1]
+ [0 0 0 0]
+ [2 1 0 0]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.1032557 2.108618  2.0842488 2.0938828]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[4 1 2 1]
+ [2 0 0 0]
+ [1 0 0 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.0496004 2.0332103 2.1150236 2.1330488]
+down from  ['right', 'down'] 
+
+[[0 0 1 0]
+ [4 0 0 0]
+ [2 0 0 0]
+ [1 1 2 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.2960134 2.222057  2.2807739 2.2642207]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[1 0 0 0]
+ [4 0 0 1]
+ [2 0 0 0]
+ [2 2 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.3174107 2.29977   2.259895  2.318455 ]
+down from  ['left', 'up', 'right', 'down'] 
+
+[[0 0 0 1]
+ [1 0 0 0]
+ [4 0 0 0]
+ [3 2 1 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.2952683 2.22959   2.284915  2.2560363]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[1 0 0 0]
+ [1 0 0 0]
+ [4 0 0 0]
+ [3 2 2 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.2931502 2.1944592 2.2862716 2.2700725]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[1 0 0 0]
+ [1 1 0 0]
+ [4 0 0 0]
+ [3 3 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4008234 2.2251482 2.324518  2.3470733]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[1 0 0 2]
+ [2 0 0 0]
+ [4 0 0 0]
+ [4 1 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2811005 2.2885957 2.1777577 2.2835913]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[1 1 0 2]
+ [2 0 0 0]
+ [5 0 0 0]
+ [0 0 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2236674 2.209949  2.2022152 2.2026596]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[2 2 0 0]
+ [2 0 0 0]
+ [5 1 0 0]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2137272 2.2252576 2.1742296 2.2292774]
+down from  ['left', 'up', 'right', 'down'] 
+
+[[0 0 0 1]
+ [3 0 0 0]
+ [5 2 0 0]
+ [1 1 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.1718192 2.1505568 2.152789  2.1509562]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[1 0 0 0]
+ [3 0 0 0]
+ [5 2 1 0]
+ [2 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.0533957 2.1267235 2.1085558 2.136886 ]
+down from  ['up', 'right', 'down'] 
+
+[[1 0 0 1]
+ [3 0 0 0]
+ [5 0 0 0]
+ [2 2 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.3284318 2.2374961 2.268956  2.2768059]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[2 0 0 0]
+ [3 0 0 0]
+ [5 0 0 0]
+ [3 1 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.187383  2.1355236 2.1172128 2.0621278]
+left from  ['left', 'up', 'right'] 
+
+[[2 1 0 0]
+ [3 0 0 0]
+ [5 0 0 0]
+ [3 2 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.0530457 2.1347914 2.0680008 2.1318836]
+up from  ['up', 'right', 'down'] 
+
+[[2 1 0 0]
+ [3 2 2 0]
+ [5 0 0 0]
+ [3 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.1961625 2.175767  2.1561632 2.1732388]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[2 1 0 0]
+ [3 3 0 0]
+ [5 0 0 0]
+ [3 0 0 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.328337  2.251587  2.2376096 2.2138493]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[2 1 0 0]
+ [4 1 0 0]
+ [5 0 0 0]
+ [3 2 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.1509902 2.2546349 2.1418862 2.2384107]
+up from  ['up', 'right', 'down'] 
+
+[[2 2 0 0]
+ [4 2 0 0]
+ [5 0 0 0]
+ [3 0 0 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.2567499 2.2119293 2.2377863 2.2202034]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[3 0 0 0]
+ [4 2 0 1]
+ [5 0 0 0]
+ [3 2 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2073567 2.2215858 2.0967176 2.2035577]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[3 3 0 1]
+ [4 0 0 0]
+ [5 0 0 0]
+ [3 0 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.3424242 2.2841609 2.1469455 2.1512692]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[4 1 0 0]
+ [4 0 0 0]
+ [5 0 0 0]
+ [3 1 2 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2678075 2.3645763 2.1223674 2.3600216]
+up from  ['up', 'right', 'down'] 
+
+[[5 2 2 0]
+ [5 0 0 0]
+ [3 0 0 0]
+ [0 1 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2569692 2.2535136 2.1661527 2.252506 ]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[5 3 0 0]
+ [5 0 0 1]
+ [3 0 0 0]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.219257  2.2387943 2.0584662 2.222996 ]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[6 3 0 1]
+ [3 0 0 0]
+ [1 0 0 1]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.1867244 2.1809793 2.1554399 2.1740184]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[6 3 1 0]
+ [3 0 0 0]
+ [2 0 0 0]
+ [0 0 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.149867  2.1525822 2.1250548 2.1424375]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[6 3 1 1]
+ [3 1 0 0]
+ [2 0 0 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2826874 2.1666179 2.2847135 2.264531 ]
+right from  ['left', 'right', 'down'] 
+
+[[0 6 3 2]
+ [0 0 3 1]
+ [0 1 0 2]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2359002 2.1895626 2.2088463 2.1875708]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[6 3 2 1]
+ [3 1 0 0]
+ [1 2 0 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2004716 2.1746612 2.2818131 2.2983534]
+down from  ['right', 'down'] 
+
+[[1 0 0 0]
+ [6 3 0 0]
+ [3 1 0 0]
+ [1 2 2 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.3676295 2.3520465 2.4017806 2.2800493]
+right from  ['left', 'up', 'right'] 
+
+[[0 0 0 1]
+ [0 0 6 3]
+ [1 0 3 1]
+ [0 1 3 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.3701706 2.4191313 2.3936691 2.414948 ]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[1 1 6 1]
+ [0 0 4 3]
+ [0 0 0 2]
+ [0 0 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.3091018 2.1825678 2.2835045 2.276652 ]
+left from  ['left', 'right', 'down'] 
+
+[[2 6 1 0]
+ [4 3 1 0]
+ [2 0 0 0]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.1468694 2.247945  2.2122834 2.245664 ]
+up from  ['up', 'right', 'down'] 
+
+[[2 6 2 0]
+ [4 3 0 0]
+ [2 0 0 0]
+ [1 0 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2741148 2.2266142 2.2594397 2.2213993]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[2 6 2 0]
+ [4 3 0 1]
+ [2 0 0 0]
+ [2 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2590384 2.2782848 2.2291615 2.2792523]
+down from  ['left', 'up', 'right', 'down'] 
+
+[[0 0 0 0]
+ [2 0 0 0]
+ [4 6 0 1]
+ [3 3 2 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.2978816 2.2524996 2.2860146 2.3012407]
+down from  ['left', 'up', 'right', 'down'] 
+
+[[0 0 1 0]
+ [2 0 0 0]
+ [4 6 0 0]
+ [3 3 2 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.3432596 2.1653316 2.3411374 2.287267 ]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[1 0 0 0]
+ [2 0 1 0]
+ [4 6 0 0]
+ [4 3 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2529638 2.2397075 2.2358935 2.244696 ]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[1 0 0 0]
+ [2 1 0 0]
+ [4 6 2 0]
+ [4 3 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.213223 2.312934 2.225079 2.309698]
+up from  ['up', 'right', 'down'] 
+
+[[1 1 2 0]
+ [2 6 0 1]
+ [5 3 0 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.3713682 2.3224587 2.3022232 2.3190832]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[2 2 0 0]
+ [2 6 1 0]
+ [5 3 0 1]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.3099196 2.309413  2.3016284 2.3244345]
+down from  ['left', 'up', 'right', 'down'] 
+
+[[0 0 0 0]
+ [1 2 0 0]
+ [3 6 0 0]
+ [5 3 1 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.2707734 2.2246761 2.2591572 2.1576185]
+left from  ['left', 'up', 'right'] 
+
+[[0 0 0 0]
+ [1 2 0 0]
+ [3 6 1 0]
+ [5 3 2 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.105274  2.1777759 2.188556  2.0980966]
+right from  ['up', 'right'] 
+
+[[0 1 0 0]
+ [0 0 1 2]
+ [0 3 6 1]
+ [0 5 3 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.3035758 2.2593832 2.2676444 2.2703736]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[1 0 0 0]
+ [1 2 0 0]
+ [3 6 1 0]
+ [5 3 2 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.340437  2.4511745 2.374967  2.4381611]
+up from  ['up', 'right', 'down'] 
+
+[[2 2 1 1]
+ [3 6 2 0]
+ [5 3 0 0]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.463401  2.3226945 2.406731  2.3381674]
+left from  ['left', 'right', 'down'] 
+
+[[3 2 0 0]
+ [3 6 2 0]
+ [5 3 0 0]
+ [1 0 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.3687942 2.3732352 2.2772715 2.3663335]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[4 2 2 0]
+ [5 6 1 0]
+ [1 3 0 1]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.3649173 2.3387134 2.361591  2.3120513]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[4 3 0 0]
+ [5 6 1 0]
+ [1 3 1 0]
+ [0 1 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.328483  2.3364403 2.315987  2.3541017]
+down from  ['left', 'up', 'right', 'down'] 
+
+[[0 3 0 0]
+ [4 6 0 0]
+ [5 3 0 1]
+ [1 1 2 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.3891726 2.2410157 2.3129935 2.3537633]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[3 0 0 0]
+ [4 6 0 0]
+ [5 3 1 0]
+ [2 2 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.3563547 2.294525  2.2943964 2.3262458]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[3 0 0 1]
+ [4 6 0 0]
+ [5 3 1 0]
+ [3 1 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.294006  2.3339036 2.1695943 2.3070695]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[3 6 1 1]
+ [4 3 1 0]
+ [5 1 0 0]
+ [3 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.3882008 2.3012292 2.367666  2.373798 ]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[3 6 2 0]
+ [4 3 1 0]
+ [5 1 0 0]
+ [3 1 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.3105683 2.3573325 2.2961435 2.4162316]
+down from  ['up', 'right', 'down'] 
+
+[[3 1 0 0]
+ [4 6 0 0]
+ [5 3 2 0]
+ [3 2 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2403529 2.335704  2.2083213 2.2249205]
+up from  ['up', 'right'] 
+
+[[3 1 2 0]
+ [4 6 1 0]
+ [5 3 0 0]
+ [3 2 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.3396442 2.4416642 2.311524  2.4438033]
+down from  ['up', 'right', 'down'] 
+
+[[3 1 0 0]
+ [4 6 0 1]
+ [5 3 2 0]
+ [3 2 2 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4991229 2.426358  2.4636257 2.4326842]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[3 1 0 1]
+ [4 6 1 0]
+ [5 3 2 0]
+ [3 3 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.5820003 2.52022   2.469726  2.5262954]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[3 2 0 0]
+ [4 6 1 0]
+ [5 3 2 0]
+ [4 1 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2348182 2.3376665 2.2543578 2.3324645]
+up from  ['up', 'right', 'down'] 
+
+[[3 2 1 0]
+ [4 6 2 1]
+ [5 3 0 0]
+ [4 1 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.3243427 2.4309433 2.3263443 2.428453 ]
+up from  ['up', 'right', 'down'] 
+
+[[3 2 1 1]
+ [4 6 2 0]
+ [5 3 0 0]
+ [4 1 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.5911787 2.523823  2.5240712 2.5345497]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[3 2 2 1]
+ [4 6 2 0]
+ [5 3 0 0]
+ [4 2 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.493412  2.3571458 2.388373  2.407682 ]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[3 3 1 1]
+ [4 6 2 0]
+ [5 3 0 0]
+ [4 2 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.561097  2.4094203 2.4311268 2.4970615]
+left from  ['left', 'right', 'down'] 
+
+[[4 2 1 0]
+ [4 6 2 0]
+ [5 3 0 0]
+ [4 2 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.3960483 2.4823031 2.2327242 2.499939 ]
+down from  ['up', 'right', 'down'] 
+
+[[0 2 0 0]
+ [5 6 0 1]
+ [5 3 1 0]
+ [4 2 2 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.5273855 2.469781  2.4085133 2.5087779]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[2 0 0 0]
+ [5 6 1 1]
+ [5 3 1 0]
+ [4 3 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.5250006 2.566125  2.3164442 2.5677078]
+down from  ['left', 'up', 'right', 'down'] 
+
+[[0 0 0 0]
+ [2 1 0 0]
+ [6 6 0 0]
+ [4 4 2 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.4336665 2.3823647 2.3533318 2.3009803]
+left from  ['left', 'up', 'right'] 
+
+[[0 1 0 0]
+ [2 1 0 0]
+ [7 0 0 0]
+ [5 2 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2799203 2.30444   2.2588162 2.2939067]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[2 2 1 0]
+ [7 2 1 0]
+ [5 0 0 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2692933 2.2817214 2.2575037 2.2732024]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[2 3 2 0]
+ [7 0 0 0]
+ [5 0 0 1]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.1061962 2.131644  2.0375326 2.1214054]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[2 3 2 1]
+ [7 0 0 0]
+ [5 0 1 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.1985853 2.219753  2.1325812 2.2115161]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[2 3 2 1]
+ [7 0 1 0]
+ [5 0 0 0]
+ [0 1 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.298346  2.3042834 2.285823  2.3024733]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[2 3 2 1]
+ [7 1 1 0]
+ [5 1 0 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4204602 2.4161139 2.417301  2.4232657]
+down from  ['left', 'up', 'right', 'down'] 
+
+[[1 0 0 0]
+ [2 0 0 0]
+ [7 3 2 0]
+ [5 2 1 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.4381144 2.3635254 2.4347236 2.3192108]
+left from  ['left', 'up', 'right'] 
+
+[[1 0 0 0]
+ [2 0 0 0]
+ [7 3 2 1]
+ [5 2 2 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4263585 2.4044924 2.4055185 2.406608 ]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[1 1 0 0]
+ [2 0 0 0]
+ [7 3 2 1]
+ [5 3 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4534729 2.4244828 2.3765538 2.4431062]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[2 0 0 0]
+ [2 0 0 0]
+ [7 3 2 1]
+ [5 3 2 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4247084 2.4907832 2.336373  2.5369558]
+down from  ['up', 'right', 'down'] 
+
+[[0 0 0 0]
+ [3 0 1 0]
+ [7 0 0 0]
+ [5 4 3 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.1654851 2.1674995 2.1067977 2.1610024]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[3 4 1 1]
+ [7 0 3 0]
+ [5 0 0 1]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2744205 2.2639105 2.234762  2.2633011]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[3 4 2 0]
+ [7 3 0 0]
+ [5 1 0 0]
+ [0 0 2 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2145104 2.221982  2.1883163 2.221599 ]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[3 4 3 0]
+ [7 3 1 0]
+ [5 1 0 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.110785  2.089064  2.171897  2.1982815]
+down from  ['right', 'down'] 
+
+[[0 0 0 0]
+ [3 4 1 0]
+ [7 3 3 0]
+ [5 1 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.3659875 2.3199885 2.3311849 2.2414246]
+left from  ['left', 'up', 'right'] 
+
+[[0 0 0 0]
+ [3 4 1 0]
+ [7 4 0 0]
+ [5 2 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.2204342 2.2320402 2.170873  2.2202246]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[3 5 1 1]
+ [7 2 0 0]
+ [5 0 0 0]
+ [0 0 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.244932  2.2507572 2.2157454 2.2598114]
+down from  ['left', 'up', 'right', 'down'] 
+
+[[1 0 0 0]
+ [3 0 0 0]
+ [7 5 0 0]
+ [5 2 1 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.128072  2.2301056 2.1897864 2.1170886]
+up from  ['up', 'right'] 
+
+[[1 5 1 2]
+ [3 2 1 0]
+ [7 0 0 0]
+ [5 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2377923 2.3188598 2.2809894 2.330389 ]
+down from  ['up', 'right', 'down'] 
+
+[[1 0 1 0]
+ [3 0 0 0]
+ [7 5 0 0]
+ [5 2 2 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.3729587 2.2390842 2.3263052 2.3078437]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[2 0 0 0]
+ [3 0 0 0]
+ [7 5 0 1]
+ [5 3 2 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2176602 2.2218802 2.1469092 2.214784 ]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[2 5 2 1]
+ [3 3 0 1]
+ [7 0 0 0]
+ [5 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4015696 2.3833654 2.3552775 2.3357487]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[2 5 2 1]
+ [4 1 0 1]
+ [7 0 0 0]
+ [5 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.3469617 2.3400483 2.3136487 2.330258 ]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[2 5 2 1]
+ [4 2 0 0]
+ [7 0 0 1]
+ [5 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.3158538 2.356526  2.2299306 2.355261 ]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[2 5 2 2]
+ [4 2 0 0]
+ [7 0 0 1]
+ [5 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.321648  2.2976406 2.2967842 2.2998803]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[2 5 3 0]
+ [4 2 0 0]
+ [7 1 1 0]
+ [5 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.3092194 2.2883563 2.2942472 2.288067 ]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[2 5 3 0]
+ [4 2 0 1]
+ [7 2 0 0]
+ [5 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.273737  2.2661037 2.2438922 2.26775  ]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[2 5 3 0]
+ [4 2 1 0]
+ [7 2 1 0]
+ [5 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.279076  2.3767302 2.335274  2.3921196]
+down from  ['up', 'right', 'down'] 
+
+[[2 0 0 1]
+ [4 0 0 0]
+ [7 5 3 0]
+ [5 3 2 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2551796 2.2756505 2.1770182 2.2557707]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[2 5 3 1]
+ [4 3 2 0]
+ [7 0 1 0]
+ [5 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.362054  2.2447987 2.29999   2.3653245]
+down from  ['left', 'right', 'down'] 
+
+[[2 0 0 0]
+ [4 0 3 1]
+ [7 5 2 0]
+ [5 3 1 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.5035024 2.4485006 2.4606123 2.459603 ]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[2 0 0 1]
+ [4 3 1 0]
+ [7 5 2 0]
+ [5 3 2 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.5036516 2.5003462 2.464346  2.5260742]
+down from  ['left', 'up', 'right', 'down'] 
+
+[[2 0 0 0]
+ [4 3 1 0]
+ [7 5 1 0]
+ [5 3 3 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.5730102 2.4605875 2.517185  2.5558255]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[2 0 0 0]
+ [4 3 1 1]
+ [7 5 1 0]
+ [5 4 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.5290837 2.5350604 2.4961448 2.5359209]
+down from  ['left', 'up', 'right', 'down'] 
+
+[[2 0 1 0]
+ [4 3 0 0]
+ [7 5 1 0]
+ [5 4 2 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.4656577 2.4972818 2.4096684 2.476391 ]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[2 3 2 1]
+ [4 5 2 0]
+ [7 4 0 0]
+ [5 0 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.3932123 2.4253116 2.321845  2.4356747]
+down from  ['left', 'up', 'right', 'down'] 
+
+[[2 0 0 0]
+ [4 3 1 0]
+ [7 5 0 0]
+ [5 4 3 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.228997  2.3165896 2.2205908 2.3159595]
+up from  ['up', 'right', 'down'] 
+
+[[2 3 1 2]
+ [4 5 3 0]
+ [7 4 0 1]
+ [5 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.3645508 2.3697543 2.2947922 2.3820643]
+down from  ['left', 'up', 'right', 'down'] 
+
+[[2 0 0 1]
+ [4 3 0 0]
+ [7 5 1 2]
+ [5 4 3 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.5052435 2.5210965 2.40247   2.500646 ]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[2 3 1 1]
+ [4 5 3 2]
+ [7 4 0 1]
+ [5 1 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.5734534 2.4451258 2.564984  2.5190217]
+left from  ['left', 'right', 'down'] 
+
+[[2 3 2 0]
+ [4 5 3 2]
+ [7 4 1 0]
+ [5 1 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.6042786 2.5710535 2.534174  2.5553706]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[2 3 2 0]
+ [4 5 3 2]
+ [7 4 1 1]
+ [5 2 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.5554867 2.5350716 2.5461426 2.5642114]
+down from  ['left', 'up', 'right', 'down'] 
+
+[[2 3 1 0]
+ [4 5 2 0]
+ [7 4 3 2]
+ [5 2 1 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.7051582 2.6651297 2.6940243 2.594784 ]
+left from  ['left', 'up', 'right'] 
+
+[[2 3 1 0]
+ [4 5 2 0]
+ [7 4 3 2]
+ [5 2 2 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.6941113 2.6065917 2.596379  2.5436277]
+left from  ['left', 'up', 'right'] 
+
+[[2 3 1 1]
+ [4 5 2 0]
+ [7 4 3 2]
+ [5 3 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.661429  2.6398478 2.6247134 2.642967 ]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[2 3 2 0]
+ [4 5 2 0]
+ [7 4 3 2]
+ [5 3 1 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.6544085 2.6437545 2.6662664 2.6092756]
+right from  ['left', 'up', 'right', 'down'] 
+
+[[0 2 3 2]
+ [0 4 5 2]
+ [7 4 3 2]
+ [1 5 3 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.6317325 2.7717018 2.64519   2.779306 ]
+down from  ['left', 'up', 'down'] 
+
+[[0 0 1 0]
+ [0 2 3 0]
+ [7 5 5 3]
+ [1 5 4 3]]
+ LEFT        UP        RIGHT      DOWN
+[2.4682658 2.4948401 2.4492688 2.512268 ]
+down from  ['left', 'up', 'right', 'down'] 
+
+[[0 0 1 0]
+ [0 0 3 1]
+ [7 2 5 0]
+ [1 6 4 4]]
+ LEFT        UP        RIGHT      DOWN
+[2.42927   2.338466  2.4319897 2.3831167]
+right from  ['left', 'up', 'right', 'down'] 
+
+[[0 0 0 1]
+ [0 0 3 1]
+ [0 7 2 5]
+ [1 1 6 5]]
+ LEFT        UP        RIGHT      DOWN
+[2.4036517 2.463947  2.4247143 2.4747097]
+down from  ['left', 'up', 'right', 'down'] 
+
+[[0 0 0 0]
+ [1 0 3 0]
+ [0 7 2 2]
+ [1 1 6 6]]
+ LEFT        UP        RIGHT      DOWN
+[2.4207013 2.3262618 2.4292746 2.3992522]
+right from  ['left', 'up', 'right', 'down'] 
+
+[[0 0 0 0]
+ [0 0 1 3]
+ [0 0 7 3]
+ [0 1 2 7]]
+ LEFT        UP        RIGHT      DOWN
+[2.1806068 2.2293272 2.1209598 2.2144077]
+up from  ['left', 'up', 'down'] 
+
+[[0 1 1 4]
+ [0 1 7 7]
+ [0 0 2 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2966928 2.2498665 2.2908454 2.214081 ]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[2 4 0 0]
+ [1 8 0 0]
+ [2 0 0 0]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.0571873 2.0399754 2.1343818 2.1171646]
+right from  ['right', 'down'] 
+
+[[0 0 2 4]
+ [1 0 1 8]
+ [0 0 0 2]
+ [0 0 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.2648902 2.2522035 2.2552862 2.2481303]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[2 4 0 0]
+ [2 8 0 0]
+ [2 0 0 0]
+ [1 1 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.3131578 2.3149202 2.289894  2.3144248]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[3 4 0 0]
+ [2 8 0 0]
+ [1 1 0 0]
+ [0 0 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2985215 2.263093  2.2943606 2.2568069]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[3 4 0 0]
+ [2 8 0 0]
+ [2 0 0 0]
+ [1 0 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.282665  2.2728915 2.2788196 2.244357 ]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[3 4 0 0]
+ [2 8 0 0]
+ [2 0 0 1]
+ [2 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2744215 2.290957  2.2275748 2.2529116]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[3 4 0 1]
+ [3 8 0 0]
+ [2 0 0 1]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2877133 2.3238888 2.175538  2.2815182]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[4 4 0 2]
+ [2 8 0 0]
+ [0 0 0 0]
+ [0 0 2 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.1926908 2.1646938 2.1725616 2.1569614]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[5 2 0 0]
+ [2 8 1 0]
+ [0 0 0 0]
+ [2 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.0872183 2.1923385 2.1469371 2.1856458]
+up from  ['up', 'right', 'down'] 
+
+[[5 2 1 1]
+ [3 8 0 0]
+ [0 0 0 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.1972651 2.0746324 2.1871688 2.1621144]
+left from  ['left', 'right', 'down'] 
+
+[[5 2 2 1]
+ [3 8 0 0]
+ [0 0 0 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.1840038 2.0634706 2.1641643 2.156853 ]
+left from  ['left', 'right', 'down'] 
+
+[[5 3 1 0]
+ [3 8 0 0]
+ [1 0 0 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.042296  2.0069635 2.0984235 2.1001687]
+down from  ['right', 'down'] 
+
+[[0 0 0 0]
+ [5 0 0 0]
+ [3 3 0 0]
+ [1 8 1 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.2642193 2.2201285 2.2514853 2.1550064]
+left from  ['left', 'up', 'right'] 
+
+[[0 0 0 0]
+ [5 0 1 0]
+ [4 0 0 0]
+ [1 8 1 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.2253845 2.2211013 2.198449  2.2082224]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[0 0 0 1]
+ [5 1 0 0]
+ [4 0 0 0]
+ [1 8 1 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.314164  2.3240337 2.3054323 2.3127327]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[5 1 1 1]
+ [4 8 0 2]
+ [1 0 0 0]
+ [0 1 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4116771 2.393333  2.4039438 2.3946855]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[5 2 1 0]
+ [4 8 2 0]
+ [1 1 0 0]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.441936  2.4374492 2.433876  2.440079 ]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[5 2 1 0]
+ [4 8 2 0]
+ [2 0 0 1]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.3693848 2.3712027 2.3557816 2.3561618]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[5 2 1 1]
+ [4 8 2 1]
+ [2 0 0 0]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.5244489 2.487628  2.519535  2.485283 ]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[5 2 2 0]
+ [4 8 2 1]
+ [2 0 1 0]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.503343  2.4700553 2.5050194 2.4428656]
+right from  ['left', 'up', 'right', 'down'] 
+
+[[0 0 5 3]
+ [4 8 2 1]
+ [0 0 2 1]
+ [0 1 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.505499  2.525626  2.489359  2.4759994]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[4 8 5 3]
+ [0 1 3 2]
+ [1 0 0 1]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4225216 2.4069147 2.414369  2.3497586]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[4 8 5 3]
+ [1 3 2 0]
+ [2 0 0 0]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2543437 2.2374253 2.3533213 2.2811358]
+right from  ['right', 'down'] 
+
+[[4 8 5 3]
+ [0 1 3 2]
+ [0 1 0 2]
+ [0 0 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.4910724 2.5756605 2.512462  2.5340977]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[4 8 5 3]
+ [0 2 3 3]
+ [0 0 0 1]
+ [0 1 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.3895605 2.4387994 2.3960302 2.380012 ]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[4 8 5 4]
+ [0 2 3 1]
+ [0 1 0 0]
+ [0 1 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.3842084 2.3829544 2.3727694 2.3753047]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[4 8 5 4]
+ [2 3 1 0]
+ [1 0 0 1]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4820745 2.5128622 2.4793432 2.453014 ]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[4 8 5 4]
+ [2 3 1 1]
+ [2 0 1 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.489528 2.544405 2.476864 2.492841]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[4 8 5 4]
+ [3 3 2 1]
+ [0 0 1 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.447242  2.3225744 2.3793952 2.368256 ]
+left from  ['left', 'right', 'down'] 
+
+[[4 8 5 4]
+ [4 2 1 0]
+ [1 0 0 0]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.3233511 2.4183216 2.331069  2.3974707]
+up from  ['up', 'right', 'down'] 
+
+[[5 8 5 4]
+ [2 2 1 0]
+ [0 0 0 0]
+ [0 0 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.361929  2.3238888 2.3066947 2.293781 ]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[5 8 5 4]
+ [3 1 0 1]
+ [0 0 0 0]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.296704  2.261094  2.280405  2.2120314]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[5 8 5 4]
+ [3 2 1 0]
+ [0 0 0 0]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.1924815 2.2536972 2.2484934 2.2211142]
+up from  ['up', 'right', 'down'] 
+
+[[5 8 5 4]
+ [3 2 1 0]
+ [1 0 0 0]
+ [0 0 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.374931  2.353229  2.3721511 2.2907906]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[5 8 5 4]
+ [3 2 1 0]
+ [1 0 0 1]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4840431 2.5155954 2.4845123 2.4534802]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[5 8 5 4]
+ [3 2 1 1]
+ [2 0 0 0]
+ [0 1 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4664156 2.460805  2.4746792 2.3841128]
+right from  ['left', 'up', 'right', 'down'] 
+
+[[5 8 5 4]
+ [0 3 2 2]
+ [0 1 0 2]
+ [0 0 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.4724581 2.490253  2.4808862 2.4108648]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[5 8 5 4]
+ [0 3 2 3]
+ [0 1 0 1]
+ [0 0 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.4530978 2.4652562 2.4392822 2.4069877]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[5 8 5 4]
+ [1 3 2 3]
+ [0 1 0 2]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4328892 2.313077  2.4314287 2.366736 ]
+left from  ['left', 'right', 'down'] 
+
+[[5 8 5 4]
+ [1 3 2 3]
+ [1 2 0 0]
+ [0 0 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.5259407 2.5607955 2.5239818 2.4937768]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[5 8 5 4]
+ [2 3 2 3]
+ [0 2 0 1]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.5307074 2.506722  2.5291455 2.4399688]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[5 8 5 4]
+ [2 3 2 3]
+ [2 1 0 1]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.6383471 2.6593232 2.6436088 2.5516803]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[5 8 5 4]
+ [3 3 2 3]
+ [1 1 0 1]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.727903  2.676315  2.6927252 2.5621824]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[5 8 5 4]
+ [4 2 3 0]
+ [2 1 0 0]
+ [1 0 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.526468  2.4957237 2.4980307 2.4660215]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[5 8 5 4]
+ [4 2 3 0]
+ [2 1 0 1]
+ [2 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.5368583 2.5754507 2.5057354 2.5228508]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[5 8 5 4]
+ [4 2 3 1]
+ [3 1 0 0]
+ [0 0 2 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4850764 2.4912202 2.466073  2.4672513]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[5 8 5 4]
+ [4 2 3 1]
+ [3 1 2 0]
+ [0 1 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.5658062 2.5900998 2.553231  2.5594583]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[5 8 5 4]
+ [4 2 3 1]
+ [3 2 2 0]
+ [0 0 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.565952  2.4421093 2.542062  2.54972  ]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[5 8 5 4]
+ [4 2 3 1]
+ [3 3 0 0]
+ [1 0 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.621648  2.601701  2.577638  2.5017946]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[5 8 5 4]
+ [4 2 3 1]
+ [4 0 0 0]
+ [2 0 0 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.5448518 2.6069393 2.4313276 2.5530593]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[5 8 5 4]
+ [5 2 3 1]
+ [2 1 0 2]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.5305645 2.5560627 2.4880426 2.501418 ]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[6 8 5 4]
+ [2 2 3 1]
+ [0 1 0 2]
+ [0 0 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.5695195 2.436864  2.525508  2.432635 ]
+left from  ['left', 'right', 'down'] 
+
+[[6 8 5 4]
+ [3 3 1 0]
+ [1 2 0 1]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.5664551 2.5663228 2.5572515 2.5118062]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[6 8 5 4]
+ [4 1 0 0]
+ [1 2 1 0]
+ [1 0 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.473389  2.4961026 2.4809136 2.4404252]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[6 8 5 4]
+ [4 1 1 1]
+ [2 2 1 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.578649  2.5517585 2.57304   2.49484  ]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[6 8 5 4]
+ [4 2 1 0]
+ [3 1 0 0]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2798066 2.269066  2.3843625 2.3535156]
+right from  ['right', 'down'] 
+
+[[6 8 5 4]
+ [1 4 2 1]
+ [0 0 3 1]
+ [0 0 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.4893904 2.5279481 2.4658618 2.4272633]
+up from  ['left', 'up', 'down'] 
+
+[[6 8 5 4]
+ [1 4 2 2]
+ [0 1 3 1]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.5139546 2.403773  2.5225854 2.429909 ]
+right from  ['left', 'right', 'down'] 
+
+[[6 8 5 4]
+ [0 1 4 3]
+ [1 1 3 1]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.5057158 2.5206485 2.503458  2.459155 ]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[6 8 5 4]
+ [1 2 4 3]
+ [0 0 3 1]
+ [0 0 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.4643066 2.5386956 2.411495  2.483001 ]
+up from  ['left', 'up', 'down'] 
+
+[[6 8 5 4]
+ [1 2 4 3]
+ [0 1 3 2]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4761004 2.3474538 2.3503633 2.3953357]
+left from  ['left', 'down'] 
+
+[[6 8 5 4]
+ [1 2 4 3]
+ [1 3 2 0]
+ [0 0 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.5753741 2.6025648 2.5684044 2.539137 ]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[6 8 5 4]
+ [2 2 4 3]
+ [1 3 2 0]
+ [0 0 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.6124759 2.4782057 2.6043758 2.498252 ]
+left from  ['left', 'right', 'down'] 
+
+[[6 8 5 4]
+ [3 4 3 1]
+ [1 3 2 0]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4301155 2.565141  2.5229263 2.509222 ]
+up from  ['up', 'right', 'down'] 
+
+[[6 8 5 4]
+ [3 4 3 1]
+ [2 3 2 0]
+ [0 0 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.5328882 2.5671763 2.5331066 2.5180008]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[6 8 5 4]
+ [3 4 3 2]
+ [2 3 2 1]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.387668  2.3838115 2.3775842 2.412973 ]
+down from  ['down'] 
+
+[[0 0 0 1]
+ [6 8 5 4]
+ [3 4 3 2]
+ [2 3 2 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.4930143 2.5400496 2.4142864 2.4040694]
+up from  ['left', 'up'] 
+
+[[6 8 5 1]
+ [3 4 3 4]
+ [2 3 2 2]
+ [0 0 2 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.6915777 2.6674767 2.685249  2.6056373]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[6 8 5 1]
+ [3 4 3 4]
+ [2 3 3 0]
+ [2 1 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.7173958 2.755768  2.6866446 2.706806 ]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[6 8 5 1]
+ [3 4 4 4]
+ [3 3 1 1]
+ [0 1 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.6745648 2.6795938 2.6622746 2.677072 ]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[6 8 5 1]
+ [4 4 4 4]
+ [0 3 1 1]
+ [0 1 2 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.7892408 2.6408665 2.6878197 2.5541062]
+left from  ['left', 'right', 'down'] 
+
+[[6 8 5 1]
+ [5 5 0 0]
+ [3 2 0 1]
+ [1 2 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.5987387 2.6012855 2.4866917 2.5346458]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[6 8 5 2]
+ [5 5 1 0]
+ [3 3 0 0]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.5666192 2.4343176 2.444427  2.3769643]
+left from  ['left', 'right', 'down'] 
+
+[[6 8 5 2]
+ [6 1 0 0]
+ [4 0 0 0]
+ [1 1 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4534998 2.4464307 2.2841222 2.3878472]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[6 8 5 2]
+ [6 1 0 0]
+ [4 1 0 0]
+ [2 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.366661  2.472591  2.2643397 2.39653  ]
+up from  ['up', 'right', 'down'] 
+
+[[7 8 5 2]
+ [4 2 0 0]
+ [2 0 0 0]
+ [0 0 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.240371  2.2341137 2.2260325 2.1839013]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 5 2]
+ [4 2 0 1]
+ [2 0 0 0]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.3420212 2.2198894 2.3346322 2.2653334]
+left from  ['left', 'right', 'down'] 
+
+[[7 8 5 2]
+ [4 2 1 0]
+ [2 0 0 0]
+ [1 2 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.302566  2.3953052 2.404559  2.368988 ]
+right from  ['up', 'right', 'down'] 
+
+[[7 8 5 2]
+ [0 4 2 1]
+ [0 1 0 2]
+ [0 0 1 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.5268133 2.5504346 2.5121324 2.4884777]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 5 2]
+ [0 4 2 1]
+ [0 1 1 3]
+ [0 0 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.5297132 2.5018065 2.5141442 2.5175714]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 5 2]
+ [4 2 1 0]
+ [2 3 1 0]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.387067  2.4983997 2.47812   2.470343 ]
+up from  ['up', 'right', 'down'] 
+
+[[7 8 5 2]
+ [4 2 2 0]
+ [2 3 1 0]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.3663464 2.3578467 2.477832  2.4395647]
+right from  ['left', 'right', 'down'] 
+
+[[7 8 5 2]
+ [0 0 4 3]
+ [0 2 3 1]
+ [0 0 1 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.5045207 2.4918292 2.454296  2.4618316]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 5 2]
+ [4 3 0 2]
+ [2 3 1 0]
+ [2 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.5380287 2.6090233 2.525113  2.5630882]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 5 3]
+ [4 4 1 0]
+ [3 0 0 0]
+ [2 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4479287 2.304862  2.2997885 2.2316177]
+left from  ['left', 'right', 'down'] 
+
+[[7 8 5 3]
+ [5 1 0 0]
+ [3 0 0 1]
+ [2 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2731695 2.267475  2.252275  2.2038696]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 5 3]
+ [5 1 1 0]
+ [3 1 0 0]
+ [2 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.3321009 2.3672755 2.3784964 2.349765 ]
+right from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 5 3]
+ [0 0 5 2]
+ [0 0 3 1]
+ [0 0 1 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.3848724 2.2595582 2.2648635 2.2846868]
+left from  ['left', 'up', 'down'] 
+
+[[7 8 5 3]
+ [5 2 0 0]
+ [3 1 0 0]
+ [1 2 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.4463046 2.4334939 2.4433713 2.3858266]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 5 3]
+ [5 2 0 0]
+ [3 1 2 0]
+ [1 2 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4001434 2.5222437 2.504686  2.4946988]
+up from  ['up', 'right', 'down'] 
+
+[[7 8 5 3]
+ [5 2 2 0]
+ [3 1 1 1]
+ [1 2 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.6707234 2.647321  2.6973805 2.6075497]
+right from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 5 3]
+ [0 0 5 3]
+ [0 3 1 2]
+ [0 1 1 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.5416696 2.6719449 2.632128  2.6392632]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 6 4]
+ [1 3 2 3]
+ [0 1 0 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.3357925 2.2195024 2.3312743 2.2661517]
+left from  ['left', 'right', 'down'] 
+
+[[7 8 6 4]
+ [1 3 2 3]
+ [1 1 0 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4059527 2.434391  2.4232368 2.3628364]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 6 4]
+ [2 3 2 3]
+ [0 1 1 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4416192 2.3172195 2.4440265 2.3710136]
+right from  ['left', 'right', 'down'] 
+
+[[7 8 6 4]
+ [2 3 2 3]
+ [0 0 0 2]
+ [2 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4133072 2.4190357 2.4121838 2.3338113]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 6 4]
+ [3 3 2 3]
+ [0 0 0 2]
+ [0 0 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.4898572 2.3510485 2.42696   2.3375828]
+left from  ['left', 'right', 'down'] 
+
+[[7 8 6 4]
+ [4 2 3 0]
+ [2 0 0 1]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.3968508 2.3625004 2.3986108 2.2823753]
+right from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 6 4]
+ [0 4 2 3]
+ [0 0 2 1]
+ [0 0 2 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.4885037 2.542723  2.4349167 2.486276 ]
+up from  ['left', 'up', 'down'] 
+
+[[7 8 6 4]
+ [0 4 3 3]
+ [0 0 2 2]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4402552 2.4404688 2.4714549 2.3657713]
+right from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 6 4]
+ [0 0 4 4]
+ [1 0 0 3]
+ [0 0 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.3122385 2.3832579 2.3189027 2.2433412]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 6 5]
+ [1 1 4 3]
+ [0 0 0 1]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.3665452 2.2388506 2.3310583 2.2611818]
+left from  ['left', 'right', 'down'] 
+
+[[7 8 6 5]
+ [2 4 3 0]
+ [1 0 0 0]
+ [0 1 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.343621  2.3167932 2.3370037 2.2513092]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 6 5]
+ [2 4 3 0]
+ [1 0 0 0]
+ [1 1 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.3941119 2.496048  2.4318025 2.4226162]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 6 5]
+ [2 4 3 1]
+ [2 1 0 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2642586 2.3997407 2.3633158 2.3226302]
+up from  ['up', 'right', 'down'] 
+
+[[7 8 6 5]
+ [3 4 3 1]
+ [0 1 0 0]
+ [0 0 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.3841708 2.3926005 2.3793418 2.304884 ]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 6 5]
+ [3 4 3 2]
+ [0 1 1 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.428812  2.3041785 2.430484  2.3544893]
+right from  ['left', 'right', 'down'] 
+
+[[7 8 6 5]
+ [3 4 3 2]
+ [0 1 0 2]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.385575  2.4375803 2.3967414 2.3688126]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 6 5]
+ [3 4 3 3]
+ [0 1 0 0]
+ [2 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4426153 2.4374251 2.4727855 2.3466506]
+right from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 6 5]
+ [0 3 4 4]
+ [0 0 1 1]
+ [0 0 0 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.4286163 2.3546925 2.4512527 2.2670057]
+right from  ['left', 'right', 'down'] 
+
+[[7 8 6 5]
+ [0 0 3 5]
+ [1 0 0 2]
+ [0 0 0 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.3010235 2.5176558 2.432568  2.382659 ]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 6 6]
+ [1 2 3 3]
+ [0 0 0 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4023438 2.2881818 2.4201994 2.302851 ]
+right from  ['left', 'right', 'down'] 
+
+[[0 7 8 7]
+ [0 1 2 4]
+ [0 0 0 0]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.1847641 2.1564891 2.1663413 2.1272173]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 0]
+ [1 2 4 0]
+ [0 0 0 0]
+ [1 0 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.26027   2.282456  2.2630224 2.2423942]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 1]
+ [2 2 4 0]
+ [0 1 0 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.319778  2.214837  2.2761798 2.2465644]
+left from  ['left', 'right', 'down'] 
+
+[[7 8 7 1]
+ [3 4 0 0]
+ [1 0 0 0]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.1496484 2.259448  2.177725  2.2342978]
+up from  ['up', 'right', 'down'] 
+
+[[7 8 7 1]
+ [3 4 0 0]
+ [2 0 0 0]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.0903318 2.075949  2.1721795 2.1291819]
+right from  ['right', 'down'] 
+
+[[7 8 7 1]
+ [0 0 3 4]
+ [0 0 0 2]
+ [0 1 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.3341434 2.2800405 2.3267787 2.2155797]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 1]
+ [3 4 0 0]
+ [2 1 0 0]
+ [2 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2445254 2.3685389 2.2809072 2.3443427]
+up from  ['up', 'right', 'down'] 
+
+[[7 8 7 1]
+ [3 4 0 0]
+ [3 1 0 0]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2020214 2.3263493 2.2493625 2.2806892]
+up from  ['up', 'right', 'down'] 
+
+[[7 8 7 1]
+ [4 4 0 0]
+ [1 1 0 0]
+ [0 0 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.4163618 2.4049156 2.3733065 2.3360353]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 1]
+ [5 0 0 0]
+ [2 0 0 0]
+ [1 0 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.2409165 2.1874578 2.2040088 2.0985518]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 1]
+ [5 0 0 0]
+ [2 0 1 0]
+ [2 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2301018 2.2436845 2.2044795 2.2106216]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 1]
+ [5 1 1 0]
+ [3 0 0 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2404263 2.119683  2.2254016 2.1835003]
+left from  ['left', 'right', 'down'] 
+
+[[7 8 7 1]
+ [5 2 0 0]
+ [3 0 0 0]
+ [0 0 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.184216  2.1830966 2.165629  2.1538246]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 1]
+ [5 2 1 0]
+ [3 0 0 0]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2160215 2.1627893 2.267684  2.252116 ]
+right from  ['right', 'down'] 
+
+[[7 8 7 1]
+ [0 5 2 1]
+ [0 1 0 3]
+ [0 0 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.3758788 2.3965914 2.3766544 2.337391 ]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 2]
+ [0 5 2 3]
+ [1 1 0 1]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4291773 2.3879693 2.4207435 2.3427622]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 2]
+ [5 2 3 0]
+ [2 1 0 0]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2822208 2.2861094 2.3732188 2.3431401]
+right from  ['right', 'down'] 
+
+[[7 8 7 2]
+ [0 5 2 3]
+ [0 1 2 1]
+ [0 0 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.4853    2.501544  2.3747973 2.452033 ]
+up from  ['left', 'up', 'down'] 
+
+[[7 8 7 2]
+ [0 5 3 3]
+ [0 1 0 2]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.3985004 2.3625643 2.403691  2.2859967]
+right from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 2]
+ [0 0 5 4]
+ [0 0 1 2]
+ [0 1 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.389886  2.3680243 2.3855135 2.3343246]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 2]
+ [5 4 0 0]
+ [1 2 0 0]
+ [2 1 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.218012  2.2021818 2.3098226 2.2840226]
+right from  ['right', 'down'] 
+
+[[7 8 7 2]
+ [0 0 5 4]
+ [0 1 1 2]
+ [0 0 2 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.4843194 2.4021847 2.461074  2.3390148]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 2]
+ [5 4 0 0]
+ [2 2 1 0]
+ [2 1 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4724767 2.483606  2.4589772 2.4422982]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 2]
+ [5 4 1 2]
+ [3 2 0 0]
+ [0 1 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4793575 2.50566   2.472902  2.479744 ]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 3]
+ [5 4 1 0]
+ [3 2 0 1]
+ [0 1 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.456884  2.4212496 2.4514058 2.3793585]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 3]
+ [5 4 1 0]
+ [3 2 1 0]
+ [1 0 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.55557   2.5307689 2.5511222 2.4720194]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 3]
+ [5 4 1 0]
+ [3 2 1 1]
+ [2 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.538897  2.5366273 2.5451884 2.482771 ]
+right from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 3]
+ [0 5 4 1]
+ [1 3 2 2]
+ [0 0 0 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.5144393 2.537133  2.5206769 2.4760551]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 3]
+ [1 5 4 1]
+ [0 3 2 3]
+ [1 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.49512   2.493977  2.4925184 2.4428802]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 3]
+ [1 5 4 1]
+ [3 2 3 0]
+ [1 0 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.575872  2.4510047 2.5716796 2.4956715]
+left from  ['left', 'right', 'down'] 
+
+[[7 8 7 3]
+ [1 5 4 1]
+ [3 2 3 1]
+ [2 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.5013041 2.6356328 2.612875  2.520859 ]
+up from  ['up', 'right', 'down'] 
+
+[[7 8 7 3]
+ [1 5 4 2]
+ [3 2 3 0]
+ [2 1 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.438437  2.4305074 2.5681593 2.4544246]
+right from  ['right', 'down'] 
+
+[[7 8 7 3]
+ [1 5 4 2]
+ [0 3 2 3]
+ [0 1 2 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.7148042 2.7520487 2.6154366 2.618927 ]
+up from  ['left', 'up', 'down'] 
+
+[[7 8 7 3]
+ [1 5 4 2]
+ [0 3 3 3]
+ [1 1 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.7228239 2.7126157 2.740401  2.5893052]
+right from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 3]
+ [1 5 4 2]
+ [0 0 3 4]
+ [1 0 1 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.5969245 2.5779755 2.595333  2.4624827]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 3]
+ [1 5 4 2]
+ [3 4 0 0]
+ [2 2 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.5982113 2.5712812 2.5884976 2.5036318]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 3]
+ [1 5 4 2]
+ [3 4 0 0]
+ [3 1 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.5861096 2.6012292 2.6130729 2.4685936]
+right from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 3]
+ [1 5 4 2]
+ [2 0 3 4]
+ [0 0 3 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.5585096 2.5464346 2.5523577 2.4572113]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 3]
+ [1 5 4 2]
+ [2 3 4 0]
+ [3 2 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.6054733 2.6145136 2.623087  2.5055487]
+right from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 3]
+ [1 5 4 2]
+ [0 2 3 4]
+ [1 3 2 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.7208278 2.713631  2.617729  2.6041803]
+left from  ['left', 'up', 'down'] 
+
+[[7 8 7 3]
+ [1 5 4 2]
+ [2 3 4 2]
+ [1 3 2 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.8271852 3.0088413 2.839162  2.84945  ]
+up from  ['up', 'down'] 
+
+[[7 8 7 3]
+ [1 5 5 3]
+ [2 4 2 1]
+ [1 0 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.7324653 2.73003   2.728541  2.6369686]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 3]
+ [1 6 3 0]
+ [2 4 2 1]
+ [2 0 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.5799747 2.5954144 2.5870018 2.5267055]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 3]
+ [1 6 3 1]
+ [3 4 2 0]
+ [0 0 1 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.58424   2.5948894 2.589055  2.5134346]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 3]
+ [1 6 3 2]
+ [3 4 2 0]
+ [1 0 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.5768023 2.4463437 2.579871  2.4290454]
+right from  ['left', 'right', 'down'] 
+
+[[7 8 7 3]
+ [1 6 3 2]
+ [1 3 4 2]
+ [0 0 0 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.582291 2.653919 2.497682 2.553843]
+up from  ['left', 'up', 'down'] 
+
+[[7 8 7 3]
+ [2 6 3 3]
+ [0 3 4 2]
+ [2 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.5005887 2.5098193 2.499555  2.4349194]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 4]
+ [3 6 3 2]
+ [1 3 4 0]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2607918 2.2397025 2.356483  2.279739 ]
+right from  ['right', 'down'] 
+
+[[7 8 7 4]
+ [3 6 3 2]
+ [0 1 3 4]
+ [0 0 2 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4565754 2.3305097 2.4340053 2.3971813]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 4]
+ [3 6 3 2]
+ [1 3 4 1]
+ [2 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4300034 2.419271  2.5617507 2.3601434]
+right from  ['right', 'down'] 
+
+[[7 8 7 4]
+ [3 6 3 2]
+ [1 3 4 1]
+ [0 0 1 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.674569  2.5170283 2.5398538 2.406597 ]
+left from  ['left', 'down'] 
+
+[[7 8 7 4]
+ [3 6 3 2]
+ [1 3 4 1]
+ [1 2 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.6506495 2.7698712 2.7620397 2.7680516]
+up from  ['up', 'right', 'down'] 
+
+[[7 8 7 4]
+ [3 6 3 2]
+ [2 3 4 1]
+ [1 2 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.6306553 2.6282072 2.7565908 2.7034395]
+right from  ['right', 'down'] 
+
+[[7 8 7 4]
+ [3 6 3 2]
+ [2 3 4 1]
+ [1 1 2 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.9364257 2.9204702 2.859027  2.8515368]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 4]
+ [3 6 3 2]
+ [2 3 4 1]
+ [2 2 1 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.8581116 2.9151525 2.8417802 2.7452698]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 4]
+ [3 6 3 2]
+ [3 3 4 1]
+ [1 2 1 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.8823981 2.8585472 2.834267  2.6768446]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 4]
+ [3 6 3 2]
+ [4 4 1 1]
+ [1 2 1 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.9016445 2.8911886 2.8908303 2.8026562]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 4]
+ [3 6 3 2]
+ [5 2 0 1]
+ [1 2 1 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.7280767 2.818189  2.7597337 2.6547012]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 4]
+ [3 6 3 2]
+ [5 3 1 1]
+ [1 1 0 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.7586398 2.6483788 2.780126  2.607849 ]
+right from  ['left', 'right', 'down'] 
+
+[[7 8 7 4]
+ [3 6 3 2]
+ [0 5 3 2]
+ [1 0 2 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.6621373 2.7240152 2.703985  2.56171  ]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 4]
+ [3 6 4 3]
+ [1 5 2 2]
+ [0 0 2 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.5776868 2.5485861 2.5725756 2.5057542]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 4]
+ [3 6 4 3]
+ [1 5 3 0]
+ [2 1 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4006238 2.3868175 2.5175128 2.399373 ]
+right from  ['right', 'down'] 
+
+[[7 8 7 4]
+ [3 6 4 3]
+ [0 1 5 3]
+ [0 1 2 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.671069  2.7699516 2.619247  2.6674523]
+up from  ['left', 'up', 'down'] 
+
+[[7 8 7 4]
+ [3 6 4 4]
+ [0 2 5 1]
+ [0 0 2 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.6430573 2.6458454 2.6350865 2.5871334]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 5]
+ [3 6 4 2]
+ [1 2 5 0]
+ [0 0 2 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4509544 2.3231697 2.4445295 2.389827 ]
+left from  ['left', 'right', 'down'] 
+
+[[7 8 7 5]
+ [3 6 4 2]
+ [1 2 5 0]
+ [2 1 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.413457  2.412901  2.5372448 2.4177551]
+right from  ['right', 'down'] 
+
+[[7 8 7 5]
+ [3 6 4 2]
+ [0 1 2 5]
+ [1 0 2 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.680493  2.7006915 2.6754208 2.5472434]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 5]
+ [3 6 4 2]
+ [1 1 3 5]
+ [0 0 1 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.6949422 2.5463645 2.622589  2.5697055]
+left from  ['left', 'right', 'down'] 
+
+[[7 8 7 5]
+ [3 6 4 2]
+ [2 3 5 0]
+ [2 0 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.5830631 2.6437638 2.508192  2.5837977]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 5]
+ [3 6 4 2]
+ [3 3 5 1]
+ [0 0 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.608054  2.6652102 2.5869477 2.5905457]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[7 8 7 5]
+ [4 6 4 2]
+ [1 3 5 2]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.383988  2.4863656 2.3603995 2.417344 ]
+up from  ['up', 'down'] 
+
+[[7 8 7 5]
+ [4 6 4 3]
+ [1 3 5 1]
+ [0 0 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.2611613 2.2482696 2.2474856 2.2679396]
+down from  ['down'] 
+
+[[0 1 0 0]
+ [7 8 7 5]
+ [4 6 4 3]
+ [1 3 5 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.3965456 2.4364455 2.3584573 2.315663 ]
+up from  ['left', 'up', 'right'] 
+
+[[7 1 7 5]
+ [4 8 4 3]
+ [1 6 5 1]
+ [0 3 0 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.5093007 2.3923464 2.476437  2.4611785]
+left from  ['left', 'right', 'down'] 
+
+[[7 1 7 5]
+ [4 8 4 3]
+ [1 6 5 1]
+ [3 2 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.5154674 2.4845984 2.6306922 2.517519 ]
+right from  ['right', 'down'] 
+
+[[7 1 7 5]
+ [4 8 4 3]
+ [1 6 5 1]
+ [1 3 2 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.642215  2.7316675 2.6076345 2.770528 ]
+down from  ['up', 'down'] 
+
+[[0 1 7 1]
+ [7 8 4 5]
+ [4 6 5 3]
+ [2 3 2 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.5618434 2.5315335 2.585266  2.4680662]
+right from  ['left', 'up', 'right'] 
+
+[[1 1 7 1]
+ [7 8 4 5]
+ [4 6 5 3]
+ [0 2 3 3]]
+ LEFT        UP        RIGHT      DOWN
+[2.5479314 2.5546203 2.539519  2.5346491]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[1 1 7 1]
+ [7 8 4 5]
+ [4 6 5 4]
+ [0 2 3 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.5718656 2.4173818 2.5221238 2.390097 ]
+left from  ['left', 'right', 'down'] 
+
+[[2 7 1 0]
+ [7 8 4 5]
+ [4 6 5 4]
+ [2 3 1 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.5810804 2.537728  2.56073   2.4514003]
+left from  ['left', 'up', 'right'] 
+
+[[2 7 1 1]
+ [7 8 4 5]
+ [4 6 5 4]
+ [2 3 2 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.5464664 2.4091187 2.5217273 2.532491 ]
+left from  ['left', 'right', 'down'] 
+
+[[2 7 2 0]
+ [7 8 4 5]
+ [4 6 5 4]
+ [2 3 2 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.461866  2.5734603 1.777443  2.4383957]
+up from  ['up', 'right'] 
+
+[[2 7 2 5]
+ [7 8 4 4]
+ [4 6 5 1]
+ [2 3 2 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.717836  2.5190587 2.7338133 2.6887422]
+right from  ['left', 'up', 'right', 'down'] 
+
+[[2 7 2 5]
+ [1 7 8 5]
+ [4 6 5 1]
+ [2 3 2 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.7002025 2.7738948 2.6604118 2.8168862]
+down from  ['up', 'down'] 
+
+[[2 0 2 1]
+ [1 8 8 0]
+ [4 6 5 6]
+ [2 3 2 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.5649076 2.4580579 2.6074452 2.5322344]
+right from  ['left', 'up', 'right', 'down'] 
+
+[[2 0 3 1]
+ [0 0 1 9]
+ [4 6 5 6]
+ [0 2 3 3]]
+ LEFT        UP        RIGHT      DOWN
+[2.485689  2.462012  2.4562616 2.4703052]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[2 3 1 0]
+ [1 9 0 0]
+ [4 6 5 6]
+ [2 4 0 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.44635   2.4349906 2.4768224 2.4264448]
+right from  ['left', 'up', 'right', 'down'] 
+
+[[1 2 3 1]
+ [0 0 1 9]
+ [4 6 5 6]
+ [0 2 4 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.514045  2.4869537 2.3889413 2.4968731]
+left from  ['left', 'up', 'down'] 
+
+[[1 2 3 1]
+ [1 9 1 0]
+ [4 6 5 6]
+ [2 4 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.5070643 2.6266346 2.5429268 2.6059234]
+up from  ['up', 'right', 'down'] 
+
+[[2 2 3 1]
+ [4 9 1 6]
+ [2 6 5 0]
+ [0 4 1 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.7034545 2.610293  2.643462  2.587476 ]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[3 3 1 0]
+ [4 9 1 6]
+ [2 6 5 0]
+ [4 2 1 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.5718923 2.5802052 2.4919498 2.5749838]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[3 3 2 6]
+ [4 9 5 0]
+ [2 6 1 1]
+ [4 2 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.5934298 2.5410466 2.5931294 2.5349   ]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[4 2 6 0]
+ [4 9 5 0]
+ [2 6 2 1]
+ [4 2 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.364804  2.4796913 2.4598315 2.4751801]
+up from  ['up', 'right', 'down'] 
+
+[[5 2 6 1]
+ [2 9 5 0]
+ [4 6 2 0]
+ [1 2 0 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.342452  2.3267934 2.444841  2.449356 ]
+down from  ['right', 'down'] 
+
+[[5 2 0 0]
+ [2 9 6 1]
+ [4 6 5 0]
+ [1 2 2 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.5199516 2.5151267 2.5462487 2.5803118]
+down from  ['left', 'up', 'right', 'down'] 
+
+[[5 2 0 0]
+ [2 9 6 0]
+ [4 6 5 1]
+ [1 2 2 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.5535235 2.467721  2.527192  2.4291902]
+left from  ['left', 'up', 'right'] 
+
+[[5 2 1 0]
+ [2 9 6 0]
+ [4 6 5 1]
+ [1 3 2 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4068124 2.5114555 2.477461  2.4924874]
+up from  ['up', 'right', 'down'] 
+
+[[5 2 1 1]
+ [2 9 6 0]
+ [4 6 5 1]
+ [1 3 2 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.6205728 2.640997  2.6256971 2.6279013]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[5 2 1 2]
+ [2 9 6 1]
+ [4 6 5 0]
+ [1 3 2 0]]
+ LEFT        UP        RIGHT      DOWN
+[2.4454    2.43626   2.5041592 2.5593333]
+down from  ['right', 'down'] 
+
+[[5 2 1 0]
+ [2 9 6 1]
+ [4 6 5 2]
+ [1 3 2 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.5177174 2.637901  2.5963337 2.518171 ]
+up from  ['up', 'right'] 
+
+[[5 2 1 1]
+ [2 9 6 2]
+ [4 6 5 1]
+ [1 3 2 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.8366446 2.8160148 2.8605678 2.8464034]
+right from  ['left', 'up', 'right', 'down'] 
+
+[[1 5 2 2]
+ [2 9 6 2]
+ [4 6 5 1]
+ [1 3 2 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.7860558 2.7539876 2.7800066 2.7794712]
+left from  ['left', 'up', 'right', 'down'] 
+
+[[1 5 3 1]
+ [2 9 6 2]
+ [4 6 5 1]
+ [1 3 2 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.6524196 2.750629  2.6270955 2.782334 ]
+down from  ['up', 'down'] 
+
+[[1 5 3 1]
+ [2 9 6 1]
+ [4 6 5 2]
+ [1 3 2 2]]
+ LEFT        UP        RIGHT      DOWN
+[2.7041757 2.7228196 2.702537  2.7004504]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[1 5 3 2]
+ [2 9 6 3]
+ [4 6 5 0]
+ [1 3 2 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.4123251  2.555874   2.5323863  0.90898585]
+up from  ['up', 'right', 'down'] 
+
+[[1 5 3 2]
+ [2 9 6 3]
+ [4 6 5 1]
+ [1 3 2 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.5880952 0.1345284 2.569641  2.7151437]
+down from  ['up', 'down'] 
+
+[[1 5 3 1]
+ [2 9 6 2]
+ [4 6 5 3]
+ [1 3 2 2]]
+ LEFT        UP        RIGHT      DOWN
+[0.682546  2.5572283 2.6944962 2.5867436]
+right from  ['left', 'right'] 
+
+[[1 5 3 1]
+ [2 9 6 2]
+ [4 6 5 3]
+ [1 1 3 3]]
+ LEFT        UP        RIGHT      DOWN
+[2.5515733 2.643034  2.6305833 2.636917 ]
+up from  ['left', 'up', 'right', 'down'] 
+
+[[1 5 3 1]
+ [2 9 6 2]
+ [4 6 5 4]
+ [1 1 3 1]]
+ LEFT        UP        RIGHT      DOWN
+[2.5845673  2.404791   0.05046988 2.4396677 ]
+left from  ['left', 'right'] 
+
+[[1 5 3 1]
+ [2 9 6 2]
+ [4 6 5 4]
+ [2 3 1 1]]
+ LEFT        UP        RIGHT      DOWN
+[0.08879304 2.2017257  2.2257671  2.2072144 ]
+right from  ['left', 'right'] 
+
+[[1 5 3 1]
+ [2 9 6 2]
+ [4 6 5 4]
+ [1 2 3 2]]
+GAME OVER! Score: Score(max_tile=512, sum=774); steps: 353
+Directions: [0.41076487252124644, 0.34560906515580736, 0.1359773371104816, 0.10764872521246459]
+Illegal tries 0.0 0 in 353 steps
+Pref counters [0.41076487252124644, 0.34560906515580736, 0.1359773371104816, 0.10764872521246459]
+Direction scores [0.47592068 0.38597734 0.4029745  0.23512748]
+
+
+
+

@@ -1,0 +1,2 @@
+time,step,game,eps,max_step,max_tile,max_sum,max_rew,mean_step,mean_tile,mean_sum,mean_rew,max_100_step,max_100_tile,max_100_sum,max_100_rew,mean_100_step,mean_100_tile,mean_100_sum,mean_100_rew
+2019-02-12_20:58:20.996487,99945,854,1,287,256,646,3652,117.03161592505855,105.3864168618267,261.78688524590166,1077.264637002342,257,256,574,3136,118.64,107.2,265.18,1096.0
