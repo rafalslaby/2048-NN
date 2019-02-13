@@ -3,6 +3,8 @@ import pathlib
 import matplotlib.pyplot as plt
 from helper_functions import *
 
+plt.rcParams.update({'font.size': 13})
+
 ProgressRecord = namedtuple('ProgressRecord',
                             ['time', 'step', 'game', 'eps', 'max_step', 'max_tile', 'max_sum', 'max_rew', 'mean_step',
                              'mean_tile', 'mean_sum', 'mean_rew', 'max_100_step', 'max_100_tile', 'max_100_sum',
@@ -21,7 +23,7 @@ def iter_dirs_with_file(filename, specific_dir=None):
 def extract_csv_rows(path, parsing_func):
     with open(path) as f:
         reader = csv.reader(f, delimiter=',')
-        next(reader,0)  # skip header
+        next(reader, 0)  # skip header
         return [parsing_func(row) for row in reader]
 
 
@@ -41,9 +43,6 @@ def get_sorted_summary(start_dir, glob_filename):
         stats.append((extract_csv_rows(file, parse_progress_stats_row)[0].mean_sum, file.parent))
     stats.sort(key=lambda stat: stat[0])
     return stats
-
-
-print(*get_sorted_summary(pathlib.Path(r"C:\Users\rafal\PycharmProjects"), 'evaluate_done.csv'), sep='\n')
 
 
 def remove_all_empty_directories(path):
@@ -66,12 +65,22 @@ def plot_epsilon_func(c):
     plt.show()
 
 
-def plot_smoothed_average_score(path, smooth_avg_over_n_games:int):
+def plot_smoothed_average_score(path, smooth_avg_over_n_games: int):
     all_scores = extract_csv_rows(path, parse_scores_row)
     all_scores_np = np.array(all_scores)
     games = np.arange(len(all_scores))
     avg_sums = []
-    for start in range(100,len(all_scores)):
-        avg_sums.append(np.mean(all_scores_np[max(0, start - smooth_avg_over_n_games):start,4]))
+    for start in range(100, len(all_scores)):
+        avg_sums.append(np.mean(all_scores_np[max(0, start - smooth_avg_over_n_games):start, 4]))
     plt.plot(games[100:], avg_sums)
+    plt.xlabel('numer rozgrywki')
+    plt.ylabel('wynik')
     plt.show()
+
+
+def generate_max_tile_histogram(path, last_n_scores=0):
+    all_scores = extract_csv_rows(path, parse_scores_row)
+    all_scores_np = np.array(all_scores)
+    print(np.mean(all_scores_np[-1000:,4]))
+    return np.unique(all_scores_np[-last_n_scores:,3], return_counts=True)
+
