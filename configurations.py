@@ -12,8 +12,9 @@ LOG_PROGRESS_FREQ = 1_500
 CONF_TO_TEST_NUMBER = 10000
 USE_GPU = False
 
-DEEP_LAYERS_SIZES = [[16, 14, 12, 10, 8, 6, 4], [16] * 10, [8] * 10, [256], [32] * 5, [64] * 3, [256] * 3, [4] * 10, [500, 300, 200, 200, 100],
-    [4]*6,[8]*6]
+DEEP_LAYERS_SIZES = [[16, 14, 12, 10, 8, 6, 4], [16] * 10, [8] * 10, [256], [32] * 5, [64] * 3, [256] * 3, [4] * 10,
+                     [500, 300, 200, 200, 100],
+                     [4] * 6, [8] * 6]
 
 OUTPUT_ACTIVATIONS = ['linear']
 OPTIMIZERS = ['adam', 'sgd', 'RMSprop', 'Adagrad', 'Adadelta', 'Adamax', 'Nadam']
@@ -26,7 +27,8 @@ LEARN_EACH_OPTS = [4, 10, 30, 100]
 MIN_EPS_OPTS = [0, 0.07, 0.1, 0.15]
 REWARD_FUNCS = [count_reward, power_reward, punishing_power_reward, dynamic_punishing_power_reward, value_reward,
                 time_reward_minus, time_reward_plus, dynamic_time_reward_plus, time_reward_plus_minus,
-                dynamic_time_reward_plus_minus, punishing_normalized_count_reward, dynamic_normalized_count_reward, normalized_count_reward,
+                dynamic_time_reward_plus_minus, punishing_normalized_count_reward, dynamic_normalized_count_reward,
+                normalized_count_reward,
                 dynamic_punishing_normalized_count_reward]
 ALLOW_ILLEGAL_OPTS = [True, False]
 EQUAL_DONES_OPTS = [True, False]
@@ -41,14 +43,14 @@ DIAG_EVALUATE_EACH_GAMES = 100
 EPSILON_CONSTATNS = [30_00, 50_000, 100_000]
 EVALUATION_STEPS = 25_000
 UPDATE_TARGETS_EACH_TRAIN_OPTS = [4, 10, 100]
-CONVOLUTIONAL_LAYERS = [[(128, 3), (128, 2)], [(256, 3), (256, 2)], [(64, 3), (64, 2)], [(128, 3), (256, 2)],[],[],[],[],[],[],[]]
+CONVOLUTIONAL_LAYERS = [[(128, 3), (128, 2)], [(256, 3), (256, 2)], [(64, 3), (64, 2)], [(128, 3), (256, 2)], [], [],
+                        [], [], [], [], []]
 CONV_ACTIVATIONS = ['linear', 'relu']
 
 ### Has to be turned manually because it's not compatible with every state map and reward function
 ONE_HOT = True
 STATE_MAP_FUNCTIONS = [do_nothing]
 REWARD_FUNCS = [normalized_count_reward]
-
 
 ####
 # Only normalized:
@@ -61,7 +63,7 @@ STATE_MAP_FUNCTIONS = [norm_16, div_by_max]
 # #####
 # Big net
 # #####
-DEEP_LAYERS_SIZES = [[256]*5, [256]*6, [256]*7, [900,500,300,200,100],[64]*7,[8]*10]
+DEEP_LAYERS_SIZES = [[256] * 5, [256] * 6, [256] * 7, [900, 500, 300, 200, 100], [64] * 7, [8] * 10]
 CONVOLUTIONAL_LAYERS = [[]]
 
 #####
@@ -70,12 +72,12 @@ CONVOLUTIONAL_LAYERS = [[]]
 DEEP_LAYERS_SIZES = [[256], [256, 256], [64] * 3, [128], [128 * 2]]
 CONVOLUTIONAL_LAYERS = [[(128, 3), (128, 2)], [(256, 3), (256, 2)], [(64, 3), (64, 2)], [(128, 3), (256, 2)]]
 
-
 ### Favor best configurations
 
 LOSSES = ['mse', 'mae', 'mae', 'mae']
 REWARD_FUNCS = [punishing_normalized_count_reward, dynamic_normalized_count_reward, normalized_count_reward,
-                dynamic_punishing_normalized_count_reward,normalized_count_reward,normalized_count_reward,normalized_count_reward]
+                dynamic_punishing_normalized_count_reward, normalized_count_reward, normalized_count_reward,
+                normalized_count_reward]
 
 #####
 # Fast testnig
@@ -124,14 +126,20 @@ ALL_OPTIONS = [ALLOW_ILLEGAL_OPTS, MIN_EPS_OPTS, OPTIMIZERS, LOSSES, CONV_ACTIVA
 TOTAL_RANDOM = TrainingConf(False, 1, 'adam', 'mae', None, [], [8] * 10, 'linear', 64, 1000000000000, 100000000000,
                             10000, do_nothing, False, power_reward, 100000000, False, False, False, False)
 
-BEST_ONE_HOT = TrainingConf(True,0,'Adamax','mae','linear',[],[128]*7,'linear',1000,4,100,1000000,do_nothing,False, normalized_count_reward,10_000,True, False, False, False)
-BEST_ONE_HOT_DRY = TrainingConf(True,0,'Adamax','mae','linear',[],[128]*7,'linear',1000,4,100,1000000,do_nothing,False, normalized_count_reward,10_000,True, False, False, True)
-BEST_BIG_NET = TrainingConf(False,0.15,'Adadelta','mae','linear',[],[256]*5,'linear',32,100,4,1000000,div_by_max,True, normalized_count_reward,50_000,False, False, False, True)
-BEST_BIG_NET_no_min_eps = TrainingConf(False,0,'Adadelta','mae','linear',[],[256]*5,'linear',32,100,4,1000000,div_by_max,True, normalized_count_reward,50_000,False, False, False, True)
-SMALL_NET = TrainingConf(True,0.1,'Adadelta','mse','relu',[],[8]*10,'linear',32,10,4,100_000,div_by_max,True,normalized_count_reward,5000,False, False, False, False)
+BEST_ONE_HOT = TrainingConf(True, 0, 'Adamax', 'mae', 'linear', [], [128] * 7, 'linear', 1000, 4, 100, 1000000,
+                            do_nothing, False, normalized_count_reward, 10_000, True, False, False, False)
+BEST_ONE_HOT_DRY = TrainingConf(True, 0, 'Adamax', 'mae', 'linear', [], [128] * 7, 'linear', 1000, 4, 100, 1000000,
+                                do_nothing, False, normalized_count_reward, 10_000, True, False, False, True)
+BEST_BIG_NET = TrainingConf(False, 0.15, 'Adadelta', 'mae', 'linear', [], [256] * 5, 'linear', 32, 100, 4, 1000000,
+                            div_by_max, True, normalized_count_reward, 50_000, False, False, False, True)
+BEST_BIG_NET_no_min_eps = TrainingConf(False, 0, 'Adadelta', 'mae', 'linear', [], [256] * 5, 'linear', 32, 100, 4,
+                                       1000000, div_by_max, True, normalized_count_reward, 50_000, False, False, False,
+                                       True)
+SMALL_NET = TrainingConf(True, 0.1, 'Adadelta', 'mse', 'relu', [], [8] * 10, 'linear', 32, 10, 4, 100_000, div_by_max,
+                         True, normalized_count_reward, 5000, False, False, False, False)
 
 USE_SPECIFIC_CONF = True
-ONE_HOT=False
+ONE_HOT = False
 SPECIFIC_CONFIGURATIONS = [SMALL_NET, BEST_ONE_HOT, BEST_BIG_NET]
 
 STATE_MAP_FUNCTIONS_DICT = {'div_by_max': div_by_max, 'do_nothing': do_nothing, 'norm_16': norm_16,
