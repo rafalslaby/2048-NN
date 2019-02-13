@@ -6,15 +6,6 @@ from configurations import *
 
 Experience = namedtuple('Experience', 'from_state action reward to_state done')
 
-# TODO: try one-hot board
-# TODO: try convolutions
-# TODO: try action as an input neuron
-# TODO: try old batch approach
-# TODO: what to change in the network
-# TODO: optimizer params
-# TODO: huber loss params
-# TODO: how to debug network, will tensor-board tell me anything in this case
-
 DIAG_MSG_FREQ = 1000
 
 
