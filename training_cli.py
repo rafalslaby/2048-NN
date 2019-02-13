@@ -5,7 +5,7 @@ if __name__ == '__main__':
     See README.md for more.
     ''')
 
-    valid_actions = ['results_summary', 'train', 'watch_best', 'find_best']
+    valid_actions = ['results_summary', 'train', 'watch_best', 'find_best', 'watch']
     parser.add_argument('action', choices=valid_actions)
     parser.add_argument('--render', '-r', action='store_true')
     parser.add_argument('--out_dir', '-o', default='results', type=str)
@@ -46,3 +46,9 @@ if __name__ == '__main__':
             print(conf_dir)
         else:
             print(f"No done configurations found in {args.dir}")
+    elif args.action == 'watch':
+        if not (pathlib.Path(args.dir) / 'model.h5').exists():
+            print(f"There's no model.h5 file in {args.dir} specify --dir")
+        else:
+            examine_model(pathlib.Path(args.dir), games=1000000, render=True, render_fps=args.fps, verbose=args.verbose,
+                          game_over_sleep=args.game_over_sleep)
