@@ -2,6 +2,9 @@
 
 Deep Q learning agent playing 2048
 
+![Example game result image](2048.png)
+
+
 ### Prerequisites
 
 - python 3.6
